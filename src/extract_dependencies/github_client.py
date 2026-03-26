@@ -5,9 +5,13 @@ from urllib3.util.retry import Retry
 
 
 DEPENDENCY_GRAPH_QUERY = """
-query ($owner: String!, $name: String!) {
+query ($owner: String!, $name: String!, $cursor: String) {
   repository(owner: $owner, name: $name) {
-    dependencyGraphManifests(first: 100) {
+    dependencyGraphManifests(first: 15, after: $cursor) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
       nodes {
         filename
         dependencies(first: 100) {
@@ -56,46 +60,82 @@ class GitHubGraphQLClient:
 
     def fetch_dependencies(self, owner: str, repo: str) -> dict:
         """
-        Exécute la requête GraphQL pour récupérer le graphe de dépendances d'un dépôt.
+        Exécute la requête GraphQL pour récupérer le graphe de dépendances d'un dépôt en gérant la pagination.
         """
-        variables = {
-            "owner": owner,
-            "name": repo
-        }
+        all_manifests = []
+        has_next = True
+        cursor = None
 
-        payload = {
-            "query": DEPENDENCY_GRAPH_QUERY,
-            "variables": variables
-        }
+        while has_next:
+            variables = {
+                "owner": owner,
+                "name": repo,
+                "cursor": cursor
+            }
 
-        max_attempts = 3
-        
-        for attempt in range(max_attempts):
-            try:
-                response = self.session.post(
-                    self.API_URL,
-                    json=payload,
-                    headers=self.headers,
-                    timeout=30
-                )
-                
-                response.raise_for_status()
-                data = response.json()
+            payload = {
+                "query": DEPENDENCY_GRAPH_QUERY,
+                "variables": variables
+            }
 
-                if "errors" in data:
-                    err_str = str(data["errors"]).lower()
-                    if "timedout" in err_str and attempt < max_attempts - 1:
-                        print(f"      [GraphQL Timeout Interne] Nouvel essai ({attempt + 1}/{max_attempts})...")
-                        time.sleep(3)
+            max_attempts = 3
+            success = False
+            
+            for attempt in range(max_attempts):
+                try:
+                    response = self.session.post(
+                        self.API_URL,
+                        json=payload,
+                        headers=self.headers,
+                        timeout=30
+                    )
+                    
+                    response.raise_for_status()
+                    data = response.json()
+
+                    if "errors" in data:
+                        err_str = str(data["errors"]).lower()
+                        if "timedout" in err_str and attempt < max_attempts - 1:
+                            print(f"      [GraphQL Timeout Interne] Nouvel essai ({attempt + 1}/{max_attempts})...")
+                            time.sleep(5)
+                            continue
+                        else:
+                            raise ValueError(f"Erreur GraphQL: {data['errors']}")
+
+                    repo_data = data.get("data", {}).get("repository")
+                    if not repo_data:
+                        has_next = False
+                        break
+                        
+                    manifests_data = repo_data.get("dependencyGraphManifests", {})
+                    nodes = manifests_data.get("nodes", [])
+                    all_manifests.extend(nodes)
+
+                    page_info = manifests_data.get("pageInfo", {})
+                    has_next = page_info.get("hasNextPage", False)
+                    cursor = page_info.get("endCursor")
+                    
+                    success = True
+                    break
+
+                except requests.exceptions.Timeout as e:
+                    if attempt < max_attempts - 1:
+                        print(f"      [Timeout Réseau] Nouvel essai ({attempt + 1}/{max_attempts})...")
+                        time.sleep(5)
                         continue
-                    else:
-                        raise ValueError(f"Erreur GraphQL: {data['errors']}")
+                    raise ValueError(f"Timeout réseau définitif : {e}")
+                
+            if not success:
+                # Si la requête échoue même après les essais, on arrête pour ce repo
+                break
 
-                return data
-
-            except requests.exceptions.Timeout as e:
-                if attempt < max_attempts - 1:
-                    print(f"      [Timeout Réseau] Nouvel essai ({attempt + 1}/{max_attempts})...")
-                    time.sleep(3)
-                    continue
-                raise ValueError(f"Timeout réseau définitif : {e}")
+        # Reconstruire un dictionnaire au format d'origine pour ne pas casser le reste du code
+        return {
+            "data": {
+                "repository": {
+                    "dependencyGraphManifests": {
+                        "nodes": all_manifests
+                    }
+                }
+            }
+        }
