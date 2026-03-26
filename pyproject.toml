@@ -1,0 +1,34 @@
+[project]
+name = "Monitoring_Git"
+version = "0.1.0"
+description = "on s'en fou"
+readme = "README.md"
+authors = [{ name = "Remi" }]
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv",
+    "loguru"
+]
+
+[project.scripts]
+"Monitoring_Git" = "src.main:main"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "ruff"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",   # Erreurs de style (pycodestyle)
+    "F",   # Erreurs logiques (pyflakes)
+    "I",   # Tri des imports (isort)
+    "UP",  # Alerte syntaxe Python périmée
+    "B",   # Détecte les bugs potentiels (flake8-bugbear)
+]
+fixable = ["ALL"] # Autorise ruff à corriger automatiquement tout ce qu'il peut
