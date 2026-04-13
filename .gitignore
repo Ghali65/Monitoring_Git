@@ -13,3 +13,5 @@ build/
 *.egg-info/
 logs*
 .tmp*
+.dlt/secrets.toml
+Exemples/
