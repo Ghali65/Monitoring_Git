@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS queue_components (
     github_url Nullable(String),
     last_update DateTime
 ) ENGINE = S3Queue(
-    'https://[HOST-MINIO]/bronze/dependencies/components/*/*.jsonl*', 
+    'https://[HOST-MINIO]/bronze/dependencies/graph_data/components/*/*.jsonl*', 
     '[ACCESS_KEY]', 
     '[SECRET_KEY]', 
     'JSONEachRow'
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS queue_dependency_relations (
     depth Int32,
     detected_at DateTime
 ) ENGINE = S3Queue(
-    'https://[HOST-MINIO]/bronze/dependencies/dependency_relations/*/*.jsonl*', 
+    'https://[HOST-MINIO]/bronze/dependencies/graph_data/dependency_relations/*/*.jsonl*', 
     '[ACCESS_KEY]', 
     '[SECRET_KEY]', 
     'JSONEachRow'
