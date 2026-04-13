@@ -42,13 +42,13 @@ CREATE TABLE IF NOT EXISTS queue_components (
     github_url Nullable(String),
     last_update DateTime
 ) ENGINE = S3Queue(
-    'https://[HOST-MINIO]/bronze/dependencies/graph_data/components/*/*.jsonl*', 
+    'https://[HOST-MINIO]/bronze/dependencies/graph_data/components/*.jsonl*', 
     '[ACCESS_KEY]', 
     '[SECRET_KEY]', 
     'JSONEachRow'
 )
 -- Le mode UNORDERED permet de traiter ingérer nouveaux fichiers en parallèle sans ordre strict
-SETTINGS mode = 'UNORDERED';
+SETTINGS mode = 'unordered', input_format_skip_unknown_fields = 1;
 
 -- 3. Le tuyau d'ingestion automatisé
 -- A chaque fois que DLT pousse un fichier sur S3, ClickHouse va l'aspirer ici.
@@ -78,12 +78,12 @@ CREATE TABLE IF NOT EXISTS queue_dependency_relations (
     depth Int32,
     detected_at DateTime
 ) ENGINE = S3Queue(
-    'https://[HOST-MINIO]/bronze/dependencies/graph_data/dependency_relations/*/*.jsonl*', 
+    'https://[HOST-MINIO]/bronze/dependencies/graph_data/dependency_relations/*.jsonl*', 
     '[ACCESS_KEY]', 
     '[SECRET_KEY]', 
     'JSONEachRow'
 )
-SETTINGS mode = 'UNORDERED';
+SETTINGS mode = 'unordered', input_format_skip_unknown_fields = 1;
 
 -- 3. Déclencheur
 CREATE MATERIALIZED VIEW mv_ingest_dependency_relations
