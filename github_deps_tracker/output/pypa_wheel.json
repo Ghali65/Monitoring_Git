@@ -1,0 +1,134 @@
+[
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "packaging",
+        "requirements": ">= 24.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "packaging",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 5.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "agronholm/release-notes",
+        "requirements": "= 1.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "release-notes",
+            "owner": {
+                "login": "agronholm"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "ncipollo/release-action",
+        "requirements": "= 1.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "release-action",
+            "owner": {
+                "login": "ncipollo"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "pypa/gh-action-pypi-publish",
+        "requirements": "= release/v1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-pypi-publish",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "codecov/codecov-action",
+        "requirements": "= 5.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codecov-action",
+            "owner": {
+                "login": "codecov"
+            }
+        }
+    }
+]

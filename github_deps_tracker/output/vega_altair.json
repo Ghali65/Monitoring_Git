@@ -1,0 +1,1453 @@
+[
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "jinja2",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "jinja",
+            "owner": {
+                "login": "pallets"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "jsonschema",
+        "requirements": ">= 3.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "jsonschema",
+            "owner": {
+                "login": "python-jsonschema"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "narwhals",
+        "requirements": ">= 2.4.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "narwhals",
+            "owner": {
+                "login": "narwhals-dev"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "packaging",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": {
+            "name": "packaging",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "typing-extensions",
+        "requirements": ">= 4.12.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "typing",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "pygments",
+        "requirements": "= 2.19.2",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pygments",
+            "owner": {
+                "login": "pygments"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "tornado",
+        "requirements": "= 6.5.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "tornado",
+            "owner": {
+                "login": "tornadoweb"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "accessible-pygments",
+        "requirements": "= 0.0.5",
+        "hasDependencies": true,
+        "repository": {
+            "name": "accessible-pygments",
+            "owner": {
+                "login": "Quansight-Labs"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "alabaster",
+        "requirements": "= 1.0.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "alabaster",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "altair-tiles",
+        "requirements": "= 0.4.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "altair_tiles",
+            "owner": {
+                "login": "vega"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "anyio",
+        "requirements": "= 4.12.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "anyio",
+            "owner": {
+                "login": "agronholm"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "anywidget",
+        "requirements": "= 0.9.21",
+        "hasDependencies": true,
+        "repository": {
+            "name": "anywidget",
+            "owner": {
+                "login": "manzt"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "appnope",
+        "requirements": "= 0.1.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "appnope",
+            "owner": {
+                "login": "minrk"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "arro3-core",
+        "requirements": "= 0.8.0",
+        "hasDependencies": true,
+        "repository": null
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "asttokens",
+        "requirements": "= 3.0.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "asttokens",
+            "owner": {
+                "login": "gristlabs"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "attrs",
+        "requirements": "= 25.4.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "attrs",
+            "owner": {
+                "login": "python-attrs"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "babel",
+        "requirements": "= 2.18.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "babel",
+            "owner": {
+                "login": "python-babel"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "backports-tarfile",
+        "requirements": "= 1.2.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "backports.tarfile",
+            "owner": {
+                "login": "jaraco"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "backports-zstd",
+        "requirements": "= 1.3.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "backports.zstd",
+            "owner": {
+                "login": "Rogdham"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "beautifulsoup4",
+        "requirements": "= 4.14.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "BeautifulSoup4",
+            "owner": {
+                "login": "wention"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "certifi",
+        "requirements": "= 2026.1.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "python-certifi",
+            "owner": {
+                "login": "certifi"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "cffi",
+        "requirements": "= 2.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "cffi",
+            "owner": {
+                "login": "python-cffi"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "charset-normalizer",
+        "requirements": "= 3.4.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "charset_normalizer",
+            "owner": {
+                "login": "jawah"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "click",
+        "requirements": "= 8.3.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "click",
+            "owner": {
+                "login": "pallets"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "colorama",
+        "requirements": "= 0.4.6",
+        "hasDependencies": false,
+        "repository": {
+            "name": "colorama",
+            "owner": {
+                "login": "tartley"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "comm",
+        "requirements": "= 0.2.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "comm",
+            "owner": {
+                "login": "ipython"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "coverage",
+        "requirements": "= 7.13.4",
+        "hasDependencies": true,
+        "repository": {
+            "name": "coveragepy",
+            "owner": {
+                "login": "coveragepy"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "cryptography",
+        "requirements": "= 46.0.5",
+        "hasDependencies": true,
+        "repository": {
+            "name": "cryptography",
+            "owner": {
+                "login": "pyca"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "debugpy",
+        "requirements": "= 1.8.20",
+        "hasDependencies": false,
+        "repository": {
+            "name": "debugpy",
+            "owner": {
+                "login": "microsoft"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "decorator",
+        "requirements": "= 5.2.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "decorator",
+            "owner": {
+                "login": "micheles"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "distlib",
+        "requirements": "= 0.4.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "distlib",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "docutils",
+        "requirements": "= 0.21.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "docutils",
+            "owner": {
+                "login": "jwilk-mirrors"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "docutils",
+        "requirements": "= 0.22.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "docutils",
+            "owner": {
+                "login": "jwilk-mirrors"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "duckdb",
+        "requirements": "= 1.4.4",
+        "hasDependencies": true,
+        "repository": {
+            "name": "duckdb",
+            "owner": {
+                "login": "duckdb"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "exceptiongroup",
+        "requirements": "= 1.3.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "exceptiongroup",
+            "owner": {
+                "login": "python-trio"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "execnet",
+        "requirements": "= 2.1.2",
+        "hasDependencies": true,
+        "repository": {
+            "name": "execnet",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "executing",
+        "requirements": "= 2.2.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "executing",
+            "owner": {
+                "login": "alexmojaki"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "filelock",
+        "requirements": "= 3.24.3",
+        "hasDependencies": false,
+        "repository": {
+            "name": "filelock",
+            "owner": {
+                "login": "tox-dev"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "geopandas",
+        "requirements": "= 1.1.2",
+        "hasDependencies": true,
+        "repository": {
+            "name": "geopandas",
+            "owner": {
+                "login": "geopandas"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "h11",
+        "requirements": "= 0.16.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "h11",
+            "owner": {
+                "login": "python-hyper"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "hatch",
+        "requirements": "= 1.16.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "hatch",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "hatchling",
+        "requirements": "= 1.28.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "hatch",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "httpcore",
+        "requirements": "= 1.0.9",
+        "hasDependencies": true,
+        "repository": {
+            "name": "httpcore",
+            "owner": {
+                "login": "encode"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "httpx",
+        "requirements": "= 0.28.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "httpx",
+            "owner": {
+                "login": "encode"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "hyperlink",
+        "requirements": "= 21.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "hyperlink",
+            "owner": {
+                "login": "python-hyper"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "idna",
+        "requirements": "= 3.11",
+        "hasDependencies": true,
+        "repository": {
+            "name": "idna",
+            "owner": {
+                "login": "kjd"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "imagesize",
+        "requirements": "= 1.4.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "imagesize_py",
+            "owner": {
+                "login": "shibukawa"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "importlib-metadata",
+        "requirements": "= 8.7.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "importlib_metadata",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "iniconfig",
+        "requirements": "= 2.3.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "iniconfig",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "ipykernel",
+        "requirements": "= 7.2.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "ipykernel",
+            "owner": {
+                "login": "ipython"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "ipython",
+        "requirements": "= 8.38.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "ipython",
+            "owner": {
+                "login": "ipython"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "ipython",
+        "requirements": "= 9.10.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "ipython",
+            "owner": {
+                "login": "ipython"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "ipython-pygments-lexers",
+        "requirements": "= 1.1.1",
+        "hasDependencies": true,
+        "repository": null
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "ipywidgets",
+        "requirements": "= 8.1.8",
+        "hasDependencies": true,
+        "repository": {
+            "name": "ipywidgets-static",
+            "owner": {
+                "login": "jakevdp"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "jaraco-classes",
+        "requirements": "= 3.4.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "jaraco.classes",
+            "owner": {
+                "login": "jaraco"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "jaraco-context",
+        "requirements": "= 6.1.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "jaraco.context",
+            "owner": {
+                "login": "jaraco"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "jaraco-functools",
+        "requirements": "= 4.4.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "jaraco.functools",
+            "owner": {
+                "login": "jaraco"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "jedi",
+        "requirements": "= 0.19.2",
+        "hasDependencies": true,
+        "repository": {
+            "name": "jedi",
+            "owner": {
+                "login": "davidhalter"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "jeepney",
+        "requirements": "= 0.9.0",
+        "hasDependencies": true,
+        "repository": null
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "jinja2",
+        "requirements": "= 3.1.6",
+        "hasDependencies": true,
+        "repository": {
+            "name": "jinja",
+            "owner": {
+                "login": "pallets"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "jsonschema",
+        "requirements": "= 4.26.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "jsonschema",
+            "owner": {
+                "login": "python-jsonschema"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "jsonschema-specifications",
+        "requirements": "= 2025.9.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "jsonschema-specifications",
+            "owner": {
+                "login": "python-jsonschema"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "jupyter-client",
+        "requirements": "= 8.8.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "jupyter_client",
+            "owner": {
+                "login": "jupyter"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "jupyter-core",
+        "requirements": "= 5.9.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "jupyter_core",
+            "owner": {
+                "login": "jupyter"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "jupyterlab-widgets",
+        "requirements": "= 3.0.16",
+        "hasDependencies": false,
+        "repository": {
+            "name": "ipywidgets",
+            "owner": {
+                "login": "jupyter-widgets"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "keyring",
+        "requirements": "= 25.7.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "keyring",
+            "owner": {
+                "login": "jaraco"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "markdown-it-py",
+        "requirements": "= 3.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "markdown-it-py",
+            "owner": {
+                "login": "executablebooks"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "markdown-it-py",
+        "requirements": "= 4.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "markdown-it-py",
+            "owner": {
+                "login": "executablebooks"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "markupsafe",
+        "requirements": "= 3.0.3",
+        "hasDependencies": false,
+        "repository": {
+            "name": "markupsafe",
+            "owner": {
+                "login": "pallets"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "matplotlib-inline",
+        "requirements": "= 0.2.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "matplotlib-inline",
+            "owner": {
+                "login": "ipython"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "mdit-py-plugins",
+        "requirements": "= 0.5.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "mdit-py-plugins",
+            "owner": {
+                "login": "executablebooks"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "mdurl",
+        "requirements": "= 0.1.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "mdurl",
+            "owner": {
+                "login": "executablebooks"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "mercantile",
+        "requirements": "= 1.2.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "mercantile",
+            "owner": {
+                "login": "mapbox"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "mistune",
+        "requirements": "= 3.2.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "mistune",
+            "owner": {
+                "login": "lepture"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "more-itertools",
+        "requirements": "= 10.8.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "more-itertools",
+            "owner": {
+                "login": "more-itertools"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "mslex",
+        "requirements": "= 1.3.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "mslex",
+            "owner": {
+                "login": "smoofra"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "mypy",
+        "requirements": "= 1.17.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "mypy",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "mypy-extensions",
+        "requirements": "= 1.1.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "mypy_extensions",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "myst-parser",
+        "requirements": "= 4.0.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "MyST-Parser",
+            "owner": {
+                "login": "executablebooks"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "myst-parser",
+        "requirements": "= 5.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "MyST-Parser",
+            "owner": {
+                "login": "executablebooks"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "narwhals",
+        "requirements": "= 2.17.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "narwhals",
+            "owner": {
+                "login": "narwhals-dev"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "nest-asyncio",
+        "requirements": "= 1.6.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "nest_asyncio",
+            "owner": {
+                "login": "erdewit"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "numpy",
+        "requirements": "= 2.2.6",
+        "hasDependencies": false,
+        "repository": {
+            "name": "numpy",
+            "owner": {
+                "login": "numpy"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "numpy",
+        "requirements": "= 2.4.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "numpy",
+            "owner": {
+                "login": "numpy"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "numpy-typing-compat",
+        "requirements": "= 20251206.2.4",
+        "hasDependencies": true,
+        "repository": null
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "numpydoc",
+        "requirements": "= 1.10.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "numpy",
+            "owner": {
+                "login": "numpy"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "optype",
+        "requirements": "= 0.9.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "optype",
+            "owner": {
+                "login": "jorenham"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "optype",
+        "requirements": "= 0.15.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "optype",
+            "owner": {
+                "login": "jorenham"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "packaging",
+        "requirements": "= 26.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "packaging",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "pandas",
+        "requirements": "= 3.0.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pandas",
+            "owner": {
+                "login": "pandas-dev"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "pandas",
+        "requirements": "= 2.3.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pandas",
+            "owner": {
+                "login": "pandas-dev"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "pandas-stubs",
+        "requirements": "= 2.3.2.250926",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pandas-stubs",
+            "owner": {
+                "login": "VirtusLab"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "parso",
+        "requirements": "= 0.8.6",
+        "hasDependencies": true,
+        "repository": {
+            "name": "parso",
+            "owner": {
+                "login": "davidhalter"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "pathspec",
+        "requirements": "= 1.0.4",
+        "hasDependencies": true,
+        "repository": {
+            "name": "python-pathspec",
+            "owner": {
+                "login": "cpburnz"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "pexpect",
+        "requirements": "= 4.9.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pexpect",
+            "owner": {
+                "login": "pexpect"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "pillow",
+        "requirements": "= 12.1.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "Pillow",
+            "owner": {
+                "login": "python-pillow"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "platformdirs",
+        "requirements": "= 4.9.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "platformdirs",
+            "owner": {
+                "login": "tox-dev"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "pluggy",
+        "requirements": "= 1.6.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pluggy",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "polars",
+        "requirements": "= 1.38.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "polars",
+            "owner": {
+                "login": "pola-rs"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "polars-runtime-32",
+        "requirements": "= 1.38.1",
+        "hasDependencies": false,
+        "repository": null
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "polars-st",
+        "requirements": "= 0.4.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "polars-st",
+            "owner": {
+                "login": "oreilles"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "prompt-toolkit",
+        "requirements": "= 3.0.52",
+        "hasDependencies": true,
+        "repository": {
+            "name": "python-prompt-toolkit",
+            "owner": {
+                "login": "prompt-toolkit"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "psutil",
+        "requirements": "= 6.1.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "psutil",
+            "owner": {
+                "login": "giampaolo"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "psygnal",
+        "requirements": "= 0.15.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "psygnal",
+            "owner": {
+                "login": "pyapp-kit"
+            }
+        }
+    },
+    {
+        "manifest": "uv.lock",
+        "packageName": "ptyprocess",
+        "requirements": "= 0.7.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "ptyprocess",
+            "owner": {
+                "login": "pexpect"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/build-free-threaded.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/build-free-threaded.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/build-free-threaded.yml",
+        "packageName": "astral-sh/setup-uv",
+        "requirements": "= 7.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-uv",
+            "owner": {
+                "login": "astral-sh"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/build.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/build.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/build.yml",
+        "packageName": "astral-sh/setup-uv",
+        "requirements": "= 7.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-uv",
+            "owner": {
+                "login": "astral-sh"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/check-pr.yml",
+        "packageName": "amannn/action-semantic-pull-request",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "action-semantic-pull-request",
+            "owner": {
+                "login": "amannn"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/docbuild.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/docbuild.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/docbuild.yml",
+        "packageName": "astral-sh/setup-uv",
+        "requirements": "= 7.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-uv",
+            "owner": {
+                "login": "astral-sh"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lint.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lint.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lint.yml",
+        "packageName": "astral-sh/setup-uv",
+        "requirements": "= 7.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-uv",
+            "owner": {
+                "login": "astral-sh"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/weekly.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/weekly.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/weekly.yml",
+        "packageName": "astral-sh/setup-uv",
+        "requirements": "= 7.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-uv",
+            "owner": {
+                "login": "astral-sh"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/weekly.yml",
+        "packageName": "pypa/gh-action-pypi-publish",
+        "requirements": "= release/v1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-pypi-publish",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/weekly.yml",
+        "packageName": "softprops/action-gh-release",
+        "requirements": "= 2.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "action-gh-release",
+            "owner": {
+                "login": "softprops"
+            }
+        }
+    }
+]

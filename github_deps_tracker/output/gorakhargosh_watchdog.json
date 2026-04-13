@@ -1,0 +1,206 @@
+[
+    {
+        "manifest": "requirements-tests.txt",
+        "packageName": "eventlet",
+        "requirements": "= 0.37.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "eventlet",
+            "owner": {
+                "login": "eventlet"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-tests.txt",
+        "packageName": "flaky",
+        "requirements": "= 3.8.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "flaky",
+            "owner": {
+                "login": "box"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-tests.txt",
+        "packageName": "mypy",
+        "requirements": "= 1.13.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "mypy",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-tests.txt",
+        "packageName": "pytest",
+        "requirements": "= 8.3.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-tests.txt",
+        "packageName": "pytest-cov",
+        "requirements": "= 6.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-cov",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-tests.txt",
+        "packageName": "pytest-timeout",
+        "requirements": "= 2.3.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-timeout",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-tests.txt",
+        "packageName": "ruff",
+        "requirements": "= 0.7.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "ruff",
+            "owner": {
+                "login": "astral-sh"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-tests.txt",
+        "packageName": "sphinx",
+        "requirements": "= 7.4.7",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinx",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-tests.txt",
+        "packageName": "sphinx",
+        "requirements": "= 8.1.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinx",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-tests.txt",
+        "packageName": "types-pyyaml",
+        "requirements": "= 6.0.12.20240917",
+        "hasDependencies": false,
+        "repository": {
+            "name": "typeshed",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/build-and-publish.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/build-and-publish.yml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= 8.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/build-and-publish.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/build-and-publish.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= 7.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/build-and-publish.yml",
+        "packageName": "pypa/gh-action-pypi-publish",
+        "requirements": "= release/v1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-pypi-publish",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    }
+]

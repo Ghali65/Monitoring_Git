@@ -1,0 +1,1029 @@
+[
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "astroid",
+        "requirements": ">= 4.1.1,<= 4.2.dev0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "astroid",
+            "owner": {
+                "login": "pylint-dev"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "colorama",
+        "requirements": ">= 0.4.5",
+        "hasDependencies": false,
+        "repository": {
+            "name": "colorama",
+            "owner": {
+                "login": "tartley"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "dill",
+        "requirements": ">= 0.3.7",
+        "hasDependencies": true,
+        "repository": {
+            "name": "dill",
+            "owner": {
+                "login": "uqfoundation"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "isort",
+        "requirements": ">= 5,> 5.13 || < 5.13,< 9",
+        "hasDependencies": true,
+        "repository": {
+            "name": "isort",
+            "owner": {
+                "login": "PyCQA"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "mccabe",
+        "requirements": ">= 0.6,< 0.8",
+        "hasDependencies": false,
+        "repository": {
+            "name": "mccabe",
+            "owner": {
+                "login": "PyCQA"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "platformdirs",
+        "requirements": ">= 2.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "platformdirs",
+            "owner": {
+                "login": "tox-dev"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "tomli",
+        "requirements": ">= 1.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "tomli",
+            "owner": {
+                "login": "hukkin"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "tomlkit",
+        "requirements": ">= 0.10.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "tomlkit",
+            "owner": {
+                "login": "python-poetry"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "typing-extensions",
+        "requirements": ">= 3.10",
+        "hasDependencies": false,
+        "repository": {
+            "name": "typing",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test.txt",
+        "packageName": "contributors-txt",
+        "requirements": ">= 1.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "contributors-txt",
+            "owner": {
+                "login": "Pierre-Sassoulas"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test.txt",
+        "packageName": "coverage",
+        "requirements": "~> 7.10",
+        "hasDependencies": true,
+        "repository": {
+            "name": "coveragepy",
+            "owner": {
+                "login": "coveragepy"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test.txt",
+        "packageName": "pytest-cov",
+        "requirements": ">= 6.2,< 8.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-cov",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test.txt",
+        "packageName": "pytest-xdist",
+        "requirements": "~> 3.8",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-xdist",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test.txt",
+        "packageName": "six",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": {
+            "name": "six",
+            "owner": {
+                "login": "benjaminp"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test.txt",
+        "packageName": "tbump",
+        "requirements": "~> 6.11.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "tbump",
+            "owner": {
+                "login": "your-tools"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test.txt",
+        "packageName": "tox",
+        "requirements": ">= 3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "tox",
+            "owner": {
+                "login": "tox-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_min.txt",
+        "packageName": "-",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": null
+    },
+    {
+        "manifest": "requirements_test_min.txt",
+        "packageName": "astroid",
+        "requirements": "= 4.1.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "astroid",
+            "owner": {
+                "login": "pylint-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_min.txt",
+        "packageName": "py",
+        "requirements": "~> 1.11.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "py",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_min.txt",
+        "packageName": "pytest",
+        "requirements": ">= 8.4,< 10.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_min.txt",
+        "packageName": "pytest-benchmark",
+        "requirements": "~> 5.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-benchmark",
+            "owner": {
+                "login": "ionelmc"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_min.txt",
+        "packageName": "pytest-timeout",
+        "requirements": "~> 2.4",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-timeout",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_min.txt",
+        "packageName": "requests",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "requests",
+            "owner": {
+                "login": "psf"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_min.txt",
+        "packageName": "setuptools",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "setuptools",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_min.txt",
+        "packageName": "towncrier",
+        "requirements": ">= 24.8,< 26.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "towncrier",
+            "owner": {
+                "login": "twisted"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_min.txt",
+        "packageName": "typing-extensions",
+        "requirements": "~> 4.15",
+        "hasDependencies": false,
+        "repository": {
+            "name": "typing",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_pre_commit.txt",
+        "packageName": "bandit",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "bandit",
+            "owner": {
+                "login": "PyCQA"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_pre_commit.txt",
+        "packageName": "black",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "black",
+            "owner": {
+                "login": "psf"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_pre_commit.txt",
+        "packageName": "flake8",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "flake8",
+            "owner": {
+                "login": "PyCQA"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_pre_commit.txt",
+        "packageName": "flake8-typing-imports",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "flake8-typing-imports",
+            "owner": {
+                "login": "asottile"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_pre_commit.txt",
+        "packageName": "isort",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "isort",
+            "owner": {
+                "login": "PyCQA"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_pre_commit.txt",
+        "packageName": "mypy",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "mypy",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_pre_commit.txt",
+        "packageName": "pre-commit",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pre-commit",
+            "owner": {
+                "login": "pre-commit"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_pre_commit.txt",
+        "packageName": "pyright",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pyright-python",
+            "owner": {
+                "login": "RobertCraigie"
+            }
+        }
+    },
+    {
+        "manifest": "requirements_test_pre_commit.txt",
+        "packageName": "ruff",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": {
+            "name": "ruff",
+            "owner": {
+                "login": "astral-sh"
+            }
+        }
+    },
+    {
+        "manifest": "doc/requirements.txt",
+        "packageName": "furo",
+        "requirements": "= 2025.12.19",
+        "hasDependencies": true,
+        "repository": {
+            "name": "furo",
+            "owner": {
+                "login": "pradyunsg"
+            }
+        }
+    },
+    {
+        "manifest": "doc/requirements.txt",
+        "packageName": "sphinx",
+        "requirements": "= 8.2.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinx",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "doc/requirements.txt",
+        "packageName": "sphinx-reredirects",
+        "requirements": "< 1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinx-reredirects",
+            "owner": {
+                "login": "documatt"
+            }
+        }
+    },
+    {
+        "manifest": "doc/requirements.txt",
+        "packageName": "towncrier",
+        "requirements": ">= 24.8,< 26.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "towncrier",
+            "owner": {
+                "login": "twisted"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/backport.yml",
+        "packageName": "actions/create-github-app-token",
+        "requirements": "= f8d387b68d61c58ab83c6c016672934102569859",
+        "hasDependencies": false,
+        "repository": {
+            "name": "create-github-app-token",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/backport.yml",
+        "packageName": "pylint-dev/backport",
+        "requirements": "= 35f69bb3064974a24ba7da019038cd616f09e66d",
+        "hasDependencies": false,
+        "repository": {
+            "name": "backport",
+            "owner": {
+                "login": "pylint-dev"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/changelog.yml",
+        "packageName": "actions/cache",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/changelog.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.0.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/changelog.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.2.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/checks.yaml",
+        "packageName": "actions/cache",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/checks.yaml",
+        "packageName": "actions/cache/restore",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/checks.yaml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.0.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/checks.yaml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.2.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql-analysis.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.0.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql-analysis.yml",
+        "packageName": "github/codeql-action/analyze",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codeql-action",
+            "owner": {
+                "login": "github"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql-analysis.yml",
+        "packageName": "github/codeql-action/autobuild",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codeql-action",
+            "owner": {
+                "login": "github"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql-analysis.yml",
+        "packageName": "github/codeql-action/init",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codeql-action",
+            "owner": {
+                "login": "github"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer-test.yaml",
+        "packageName": "actions/cache",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer-test.yaml",
+        "packageName": "actions/cache/restore",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer-test.yaml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.0.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer-test.yaml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.2.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_comment.yaml",
+        "packageName": "actions/cache",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_comment.yaml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.0.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_comment.yaml",
+        "packageName": "actions/github-script",
+        "requirements": "= 8.0.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "github-script",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_comment.yaml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.2.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_comment.yaml",
+        "packageName": "kanga333/comment-hider",
+        "requirements": "= c12bb20b48aeb8fc098e35967de8d4f8018fffdf",
+        "hasDependencies": false,
+        "repository": {
+            "name": "comment-hider",
+            "owner": {
+                "login": "kanga333"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_run_main.yaml",
+        "packageName": "actions/cache/restore",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_run_main.yaml",
+        "packageName": "actions/cache/save",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_run_main.yaml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.0.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_run_main.yaml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.2.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_run_main.yaml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= 7.0.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_run_pr.yaml",
+        "packageName": "actions/cache/restore",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_run_pr.yaml",
+        "packageName": "actions/cache/save",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_run_pr.yaml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.0.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_run_pr.yaml",
+        "packageName": "actions/github-script",
+        "requirements": "= 8.0.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "github-script",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_run_pr.yaml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.2.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/primer_run_pr.yaml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= 7.0.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.0.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= 8.0.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.2.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= 7.0.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "pypa/gh-action-pypi-publish",
+        "requirements": "= release/v1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-pypi-publish",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "sigstore/gh-action-sigstore-python",
+        "requirements": "= 3.2.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-sigstore-python",
+            "owner": {
+                "login": "sigstore"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/stale.yml",
+        "packageName": "actions/stale",
+        "requirements": "= 10.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "stale",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yaml",
+        "packageName": "actions/cache",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yaml",
+        "packageName": "actions/cache/restore",
+        "requirements": "= 5.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yaml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.0.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yaml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= 8.0.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yaml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.2.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yaml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= 7.0.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yaml",
+        "packageName": "codecov/codecov-action",
+        "requirements": "= 5.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codecov-action",
+            "owner": {
+                "login": "codecov"
+            }
+        }
+    }
+]

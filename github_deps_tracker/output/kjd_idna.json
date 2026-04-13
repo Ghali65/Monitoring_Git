@@ -1,0 +1,146 @@
+[
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 11bd71901bbe5b1630ceea73d27597364c9af683",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= d3f86a106a0bac45b974a628896c90dbdf5c8093",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a26af69be951a213d495a4c3e4e4022e16d87065",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "pypa/gh-action-pypi-publish",
+        "requirements": "= 76f52bc884231f62b9a034ebfe128415bbaabdfc",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-pypi-publish",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "sigstore/gh-action-sigstore-python",
+        "requirements": "= f514d46b907ebcd5bedc05145c03b69c1edd8b46",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-sigstore-python",
+            "owner": {
+                "login": "sigstore"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/python-package.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 11bd71901bbe5b1630ceea73d27597364c9af683",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/python-package.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a26af69be951a213d495a4c3e4e4022e16d87065",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/scorecard.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 692973e3d937129bcbf40652eb9f2f61becf3332",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/scorecard.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= 834a144ee995460fba8ed112a2fc961b36a5ec5a",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/scorecard.yml",
+        "packageName": "github/codeql-action/upload-sarif",
+        "requirements": "= 17573ee1cc1b9d061760f3a006fc4aac4f944fd5",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codeql-action",
+            "owner": {
+                "login": "github"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/scorecard.yml",
+        "packageName": "ossf/scorecard-action",
+        "requirements": "= a46b90b4caca61e2298cc4a9bd4c90d3dfe7f09d",
+        "hasDependencies": false,
+        "repository": {
+            "name": "scorecard-action",
+            "owner": {
+                "login": "ossf"
+            }
+        }
+    }
+]

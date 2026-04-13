@@ -1,0 +1,369 @@
+[
+    {
+        "manifest": "requirements-dev.txt",
+        "packageName": "pytest-icdiff",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": {
+            "name": "pytest-icdiff",
+            "owner": {
+                "login": "hjwp"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-dev.txt",
+        "packageName": "ruff",
+        "requirements": ">= 0.8",
+        "hasDependencies": false,
+        "repository": {
+            "name": "ruff",
+            "owner": {
+                "login": "astral-sh"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-dev.txt",
+        "packageName": "shellcheck",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": null
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "gitdb",
+        "requirements": ">= 4.0.1,< 5",
+        "hasDependencies": true,
+        "repository": {
+            "name": "gitdb",
+            "owner": {
+                "login": "gitpython-developers"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "typing-extensions",
+        "requirements": ">= 3.10.0.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "typing",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "coverage",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "coveragepy",
+            "owner": {
+                "login": "coveragepy"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "ddt",
+        "requirements": ">= 1.1.1,< 1.4.3 || > 1.4.3",
+        "hasDependencies": false,
+        "repository": {
+            "name": "ddt",
+            "owner": {
+                "login": "datadriventests"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "mock",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "mock",
+            "owner": {
+                "login": "testing-cabal"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "mypy",
+        "requirements": "= 1.18.2",
+        "hasDependencies": true,
+        "repository": {
+            "name": "mypy",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pre-commit",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pre-commit",
+            "owner": {
+                "login": "pre-commit"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pytest",
+        "requirements": ">= 7.3.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pytest-cov",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-cov",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pytest-instafail",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": {
+            "name": "pytest-instafail",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pytest-mock",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-mock",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pytest-sugar",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-sugar",
+            "owner": {
+                "login": "Teemu"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "typing-extensions",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": {
+            "name": "typing",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "doc/requirements.txt",
+        "packageName": "sphinx",
+        "requirements": ">= 7.4.7,< 8",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinx",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "doc/requirements.txt",
+        "packageName": "sphinx-autodoc-typehints",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinx-autodoc-typehints",
+            "owner": {
+                "login": "tox-dev"
+            }
+        }
+    },
+    {
+        "manifest": "doc/requirements.txt",
+        "packageName": "sphinx-rtd-theme",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinx_rtd_theme",
+            "owner": {
+                "login": "readthedocs"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/alpine-test.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql.yml",
+        "packageName": "github/codeql-action/analyze",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codeql-action",
+            "owner": {
+                "login": "github"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql.yml",
+        "packageName": "github/codeql-action/init",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codeql-action",
+            "owner": {
+                "login": "github"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/cygwin-test.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/cygwin-test.yml",
+        "packageName": "cygwin/cygwin-install-action",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cygwin-install-action",
+            "owner": {
+                "login": "cygwin"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lint.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lint.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lint.yml",
+        "packageName": "pre-commit/action",
+        "requirements": "= 3.0.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "action",
+            "owner": {
+                "login": "pre-commit"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/pythonpackage.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/pythonpackage.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/pythonpackage.yml",
+        "packageName": "Vampire/setup-wsl",
+        "requirements": "= 6.0.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-wsl",
+            "owner": {
+                "login": "Vampire"
+            }
+        }
+    }
+]

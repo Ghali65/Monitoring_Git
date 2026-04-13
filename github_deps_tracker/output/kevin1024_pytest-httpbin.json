@@ -1,0 +1,74 @@
+[
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "httpbin",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "httpbin",
+            "owner": {
+                "login": "postmanlabs"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/main.yaml",
+        "packageName": "actions/checkout",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/main.yaml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/main.yaml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 5.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/main.yaml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/main.yaml",
+        "packageName": "pypa/gh-action-pypi-publish",
+        "requirements": "= release/v1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-pypi-publish",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    }
+]

@@ -1,0 +1,170 @@
+[
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "pytest",
+        "requirements": ">= 6.2.5",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "docs/requirements.txt",
+        "packageName": "furo",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "furo",
+            "owner": {
+                "login": "pradyunsg"
+            }
+        }
+    },
+    {
+        "manifest": "docs/requirements.txt",
+        "packageName": "sphinx",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinx",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "docs/requirements.txt",
+        "packageName": "sphinx-copybutton",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": {
+            "name": "sphinx-copybutton",
+            "owner": {
+                "login": "executablebooks"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= 8.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "hynek/build-and-inspect-python-package",
+        "requirements": "= 2.14.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "build-and-inspect-python-package",
+            "owner": {
+                "login": "hynek"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "pypa/gh-action-pypi-publish",
+        "requirements": "= 1.13.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-pypi-publish",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/deploy.yml",
+        "packageName": "softprops/action-gh-release",
+        "requirements": "= 2.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "action-gh-release",
+            "owner": {
+                "login": "softprops"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= 8.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "hynek/build-and-inspect-python-package",
+        "requirements": "= 2.14.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "build-and-inspect-python-package",
+            "owner": {
+                "login": "hynek"
+            }
+        }
+    }
+]

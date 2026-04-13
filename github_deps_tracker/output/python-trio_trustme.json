@@ -1,0 +1,1096 @@
+[
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "pygments",
+        "requirements": "= 2.19.2",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pygments",
+            "owner": {
+                "login": "pygments"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "alabaster",
+        "requirements": "= 1.0.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "alabaster",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "babel",
+        "requirements": "= 2.18.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "babel",
+            "owner": {
+                "login": "python-babel"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "certifi",
+        "requirements": "= 2026.2.25",
+        "hasDependencies": false,
+        "repository": {
+            "name": "python-certifi",
+            "owner": {
+                "login": "certifi"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "cffi",
+        "requirements": "= 2.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "cffi",
+            "owner": {
+                "login": "python-cffi"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "charset-normalizer",
+        "requirements": "= 3.4.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "charset_normalizer",
+            "owner": {
+                "login": "jawah"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "cryptography",
+        "requirements": "= 46.0.5",
+        "hasDependencies": true,
+        "repository": {
+            "name": "cryptography",
+            "owner": {
+                "login": "pyca"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "docutils",
+        "requirements": "= 0.21.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "docutils",
+            "owner": {
+                "login": "jwilk-mirrors"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "idna",
+        "requirements": "= 3.11",
+        "hasDependencies": true,
+        "repository": {
+            "name": "idna",
+            "owner": {
+                "login": "kjd"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "imagesize",
+        "requirements": "= 1.4.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "imagesize_py",
+            "owner": {
+                "login": "shibukawa"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "jinja2",
+        "requirements": "= 3.1.6",
+        "hasDependencies": true,
+        "repository": {
+            "name": "jinja",
+            "owner": {
+                "login": "pallets"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "markupsafe",
+        "requirements": "= 3.0.3",
+        "hasDependencies": false,
+        "repository": {
+            "name": "markupsafe",
+            "owner": {
+                "login": "pallets"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "packaging",
+        "requirements": "= 26.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "packaging",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "pycparser",
+        "requirements": "= 3.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "pycparser",
+            "owner": {
+                "login": "eliben"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "requests",
+        "requirements": "= 2.32.5",
+        "hasDependencies": true,
+        "repository": {
+            "name": "requests",
+            "owner": {
+                "login": "psf"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "snowballstemmer",
+        "requirements": "= 3.0.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "snowball",
+            "owner": {
+                "login": "snowballstem"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "sphinx",
+        "requirements": "= 8.1.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinx",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "sphinxcontrib-applehelp",
+        "requirements": "= 2.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinxcontrib-applehelp",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "sphinxcontrib-devhelp",
+        "requirements": "= 2.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinxcontrib-devhelp",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "sphinxcontrib-htmlhelp",
+        "requirements": "= 2.1.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinxcontrib-htmlhelp",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "sphinxcontrib-jsmath",
+        "requirements": "= 1.0.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinxcontrib-jsmath",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "sphinxcontrib-qthelp",
+        "requirements": "= 2.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinxcontrib-qthelp",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "sphinxcontrib-serializinghtml",
+        "requirements": "= 2.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinxcontrib-serializinghtml",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "sphinxcontrib-trio",
+        "requirements": "= 1.2.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinxcontrib-trio",
+            "owner": {
+                "login": "python-trio"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "tomli",
+        "requirements": "= 2.4.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "tomli",
+            "owner": {
+                "login": "hukkin"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "typing-extensions",
+        "requirements": "= 4.15.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "typing",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "docs-requirements.txt",
+        "packageName": "urllib3",
+        "requirements": "= 2.6.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "urllib3",
+            "owner": {
+                "login": "urllib3"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "black",
+        "requirements": "= 26.1.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "black",
+            "owner": {
+                "login": "psf"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "pygments",
+        "requirements": "= 2.19.2",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pygments",
+            "owner": {
+                "login": "pygments"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "argcomplete",
+        "requirements": "= 3.6.3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "argcomplete",
+            "owner": {
+                "login": "kislyuk"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "attrs",
+        "requirements": "= 25.4.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "attrs",
+            "owner": {
+                "login": "python-attrs"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "cffi",
+        "requirements": "= 2.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "cffi",
+            "owner": {
+                "login": "python-cffi"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "click",
+        "requirements": "= 8.3.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "click",
+            "owner": {
+                "login": "pallets"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "colorlog",
+        "requirements": "= 6.10.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "python-colorlog",
+            "owner": {
+                "login": "borntyping"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "cryptography",
+        "requirements": "= 46.0.5",
+        "hasDependencies": true,
+        "repository": {
+            "name": "cryptography",
+            "owner": {
+                "login": "pyca"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "dependency-groups",
+        "requirements": "= 1.3.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "dependency-groups",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "distlib",
+        "requirements": "= 0.4.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "distlib",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "exceptiongroup",
+        "requirements": "= 1.3.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "exceptiongroup",
+            "owner": {
+                "login": "python-trio"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "filelock",
+        "requirements": "= 3.24.3",
+        "hasDependencies": false,
+        "repository": {
+            "name": "filelock",
+            "owner": {
+                "login": "tox-dev"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "humanize",
+        "requirements": "= 4.15.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "humanize",
+            "owner": {
+                "login": "python-humanize"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "idna",
+        "requirements": "= 3.11",
+        "hasDependencies": true,
+        "repository": {
+            "name": "idna",
+            "owner": {
+                "login": "kjd"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "iniconfig",
+        "requirements": "= 2.3.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "iniconfig",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "isort",
+        "requirements": "= 8.0.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "isort",
+            "owner": {
+                "login": "PyCQA"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "librt",
+        "requirements": "= 0.8.1",
+        "hasDependencies": false,
+        "repository": null
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "mypy",
+        "requirements": "= 1.19.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "mypy",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "mypy-extensions",
+        "requirements": "= 1.1.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "mypy_extensions",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "nox",
+        "requirements": "= 2026.2.9",
+        "hasDependencies": true,
+        "repository": {
+            "name": "nox",
+            "owner": {
+                "login": "wntrblm"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "packaging",
+        "requirements": "= 26.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "packaging",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "pathspec",
+        "requirements": "= 1.0.4",
+        "hasDependencies": true,
+        "repository": {
+            "name": "python-pathspec",
+            "owner": {
+                "login": "cpburnz"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "platformdirs",
+        "requirements": "= 4.9.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "platformdirs",
+            "owner": {
+                "login": "tox-dev"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "pluggy",
+        "requirements": "= 1.6.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pluggy",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "pycparser",
+        "requirements": "= 3.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "pycparser",
+            "owner": {
+                "login": "eliben"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "pytest",
+        "requirements": "= 9.0.2",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "python-discovery",
+        "requirements": "= 1.1.0",
+        "hasDependencies": true,
+        "repository": null
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "pytokens",
+        "requirements": "= 0.4.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytokens",
+            "owner": {
+                "login": "tusharsadhwani"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "tomli",
+        "requirements": "= 2.4.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "tomli",
+            "owner": {
+                "login": "hukkin"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "types-cffi",
+        "requirements": "= 1.17.0.20250915",
+        "hasDependencies": true,
+        "repository": {
+            "name": "typeshed",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "types-pyopenssl",
+        "requirements": "= 24.1.0.20240722",
+        "hasDependencies": true,
+        "repository": {
+            "name": "typeshed",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "types-setuptools",
+        "requirements": "= 82.0.0.20260210",
+        "hasDependencies": false,
+        "repository": {
+            "name": "typeshed",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "typing-extensions",
+        "requirements": "= 4.15.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "typing",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "lint-requirements.txt",
+        "packageName": "virtualenv",
+        "requirements": "= 21.1.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "virtualenv",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "cryptography",
+        "requirements": ">= 3.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "cryptography",
+            "owner": {
+                "login": "pyca"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "idna",
+        "requirements": ">= 2.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "idna",
+            "owner": {
+                "login": "kjd"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pyasn1",
+        "requirements": "= 0.6.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "pyasn1",
+            "owner": {
+                "login": "etingof"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pygments",
+        "requirements": "= 2.19.2",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pygments",
+            "owner": {
+                "login": "pygments"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pyopenssl",
+        "requirements": "= 25.3.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pyopenssl",
+            "owner": {
+                "login": "pyca"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "attrs",
+        "requirements": "= 25.4.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "attrs",
+            "owner": {
+                "login": "python-attrs"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "cffi",
+        "requirements": "= 2.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "cffi",
+            "owner": {
+                "login": "python-cffi"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "coverage",
+        "requirements": "= 7.13.4",
+        "hasDependencies": true,
+        "repository": {
+            "name": "coveragepy",
+            "owner": {
+                "login": "coveragepy"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "cryptography",
+        "requirements": "= 46.0.5",
+        "hasDependencies": true,
+        "repository": {
+            "name": "cryptography",
+            "owner": {
+                "login": "pyca"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "exceptiongroup",
+        "requirements": "= 1.3.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "exceptiongroup",
+            "owner": {
+                "login": "python-trio"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "idna",
+        "requirements": "= 3.11",
+        "hasDependencies": true,
+        "repository": {
+            "name": "idna",
+            "owner": {
+                "login": "kjd"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "iniconfig",
+        "requirements": "= 2.3.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "iniconfig",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "packaging",
+        "requirements": "= 26.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "packaging",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pluggy",
+        "requirements": "= 1.6.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pluggy",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pyasn1-modules",
+        "requirements": "= 0.4.2",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pyasn1-modules",
+            "owner": {
+                "login": "pyasn1"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pycparser",
+        "requirements": "= 3.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "pycparser",
+            "owner": {
+                "login": "eliben"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "pytest",
+        "requirements": "= 9.0.2",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "service-identity",
+        "requirements": "= 24.2.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "service-identity",
+            "owner": {
+                "login": "pyca"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "tomli",
+        "requirements": "= 2.4.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "tomli",
+            "owner": {
+                "login": "hukkin"
+            }
+        }
+    },
+    {
+        "manifest": "test-requirements.txt",
+        "packageName": "typing-extensions",
+        "requirements": "= 4.15.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "typing",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/ci.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 5.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/ci.yml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= 5.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/ci.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/ci.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lint.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lint.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 5.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= d632683dd7b4114ad314bca15554477dd762a938",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= fa0a91b85d4f404e444e00e005971372dc801d16",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= f677139bbe7f9c59b41e40162b753c062f5d49a3",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= 50769540e7f4bd5e21e526ee35c689e35e0d6874",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "pypa/gh-action-pypi-publish",
+        "requirements": "= f7600683efdcb7656dec5b29656edb7bc586e597",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-pypi-publish",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    }
+]

@@ -1,0 +1,854 @@
+[
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "contourpy",
+        "requirements": ">= 1.0.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "contourpy",
+            "owner": {
+                "login": "contourpy"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "cycler",
+        "requirements": ">= 0.10",
+        "hasDependencies": true,
+        "repository": {
+            "name": "cycler",
+            "owner": {
+                "login": "matplotlib"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "fonttools",
+        "requirements": ">= 4.22.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "fonttools",
+            "owner": {
+                "login": "fonttools"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "kiwisolver",
+        "requirements": ">= 1.3.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "kiwi",
+            "owner": {
+                "login": "nucleic"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "numpy",
+        "requirements": ">= 1.25",
+        "hasDependencies": false,
+        "repository": {
+            "name": "numpy",
+            "owner": {
+                "login": "numpy"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "packaging",
+        "requirements": ">= 20.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "packaging",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "pillow",
+        "requirements": ">= 9",
+        "hasDependencies": true,
+        "repository": {
+            "name": "Pillow",
+            "owner": {
+                "login": "python-pillow"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "pyparsing",
+        "requirements": ">= 3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pyparsing",
+            "owner": {
+                "login": "pyparsing"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "python-dateutil",
+        "requirements": ">= 2.7",
+        "hasDependencies": true,
+        "repository": {
+            "name": "dateutil",
+            "owner": {
+                "login": "dateutil"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "contourpy",
+        "requirements": "= 1.0.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "contourpy",
+            "owner": {
+                "login": "contourpy"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "cycler",
+        "requirements": "= 0.10",
+        "hasDependencies": true,
+        "repository": {
+            "name": "cycler",
+            "owner": {
+                "login": "matplotlib"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "fonttools",
+        "requirements": "= 4.22.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "fonttools",
+            "owner": {
+                "login": "fonttools"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "importlib-resources",
+        "requirements": "= 3.2.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "importlib_resources",
+            "owner": {
+                "login": "python"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "ipykernel",
+        "requirements": "= 5.5.6",
+        "hasDependencies": true,
+        "repository": {
+            "name": "ipykernel",
+            "owner": {
+                "login": "ipython"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "ipython",
+        "requirements": "= 7.29.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "ipython",
+            "owner": {
+                "login": "ipython"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "kiwisolver",
+        "requirements": "= 1.3.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "kiwi",
+            "owner": {
+                "login": "nucleic"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "matplotlib-inline",
+        "requirements": "< 0.1.7",
+        "hasDependencies": false,
+        "repository": {
+            "name": "matplotlib-inline",
+            "owner": {
+                "login": "ipython"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "meson",
+        "requirements": "= 1.1.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "meson",
+            "owner": {
+                "login": "mesonbuild"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "meson-python",
+        "requirements": "= 0.13.1",
+        "hasDependencies": true,
+        "repository": {
+            "name": "meson-python",
+            "owner": {
+                "login": "mesonbuild"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "numpy",
+        "requirements": "= 1.25.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "numpy",
+            "owner": {
+                "login": "numpy"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "packaging",
+        "requirements": "= 20.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "packaging",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "pillow",
+        "requirements": "= 9.0.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "Pillow",
+            "owner": {
+                "login": "python-pillow"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "pyparsing",
+        "requirements": "= 3.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pyparsing",
+            "owner": {
+                "login": "pyparsing"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "pytest",
+        "requirements": "= 7.0.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "ci/minver-requirements.txt",
+        "packageName": "python-dateutil",
+        "requirements": "= 2.7",
+        "hasDependencies": true,
+        "repository": {
+            "name": "dateutil",
+            "owner": {
+                "login": "dateutil"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/autoclose_schedule.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/autoclose_schedule.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/cibuildwheel.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/cibuildwheel.yml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= 3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/cibuildwheel.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/cibuildwheel.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= bbbca2ddaa5d8feaa63e36b76fdaad77386f024f",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/cibuildwheel.yml",
+        "packageName": "pypa/cibuildwheel",
+        "requirements": "= ee02a1537ce3071a004a6b08c41e72f0fdc42d9a",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cibuildwheel",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/circleci.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/circleci.yml",
+        "packageName": "reviewdog/action-setup",
+        "requirements": "= d8a7baabd7f3e8544ee4dbde3ee41d0011c3a93f",
+        "hasDependencies": false,
+        "repository": {
+            "name": "action-setup",
+            "owner": {
+                "login": "reviewdog"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/circleci.yml",
+        "packageName": "scientific-python/circleci-artifacts-redirector-action",
+        "requirements": "= 5d358ff96e96429a5c64a969bb4a574555439f4f",
+        "hasDependencies": false,
+        "repository": {
+            "name": "circleci-artifacts-redirector-action",
+            "owner": {
+                "login": "scientific-python"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/clean_pr.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql-analysis.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql-analysis.yml",
+        "packageName": "github/codeql-action/analyze",
+        "requirements": "= 38697555549f1db7851b81482ff19f1fa5c4fedc",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codeql-action",
+            "owner": {
+                "login": "github"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql-analysis.yml",
+        "packageName": "github/codeql-action/init",
+        "requirements": "= 38697555549f1db7851b81482ff19f1fa5c4fedc",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codeql-action",
+            "owner": {
+                "login": "github"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/conflictcheck.yml",
+        "packageName": "eps1lon/actions-label-merge-conflict",
+        "requirements": "= 1df065ebe6e3310545d4f4c4e862e43bdca146f0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "actions-label-merge-conflict",
+            "owner": {
+                "login": "eps1lon"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/cygwin.yml",
+        "packageName": "actions/cache",
+        "requirements": "= 668228422ae6a00e4ad889ee87cd7109ec5666a7",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/cygwin.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/cygwin.yml",
+        "packageName": "cygwin/cygwin-install-action",
+        "requirements": "= 711d29f3da23c9f4a1798e369a6f01198c13b11a",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cygwin-install-action",
+            "owner": {
+                "login": "cygwin"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/good-first-issue.yml",
+        "packageName": "peter-evans/create-or-update-comment",
+        "requirements": "= e8674b075228eee787fea43ef493e45ece1004c9",
+        "hasDependencies": false,
+        "repository": {
+            "name": "create-or-update-comment",
+            "owner": {
+                "login": "peter-evans"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/labeler.yml",
+        "packageName": "actions/labeler",
+        "requirements": "= 634933edcd8ababfe52f92936142cc22ac488b1b",
+        "hasDependencies": false,
+        "repository": {
+            "name": "labeler",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/linting.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/linting.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/linting.yml",
+        "packageName": "j178/prek-action",
+        "requirements": "= 79f765515bd648eb4d6bb1b17277b7cb22cb6468",
+        "hasDependencies": false,
+        "repository": {
+            "name": "prek-action",
+            "owner": {
+                "login": "j178"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/linting.yml",
+        "packageName": "reviewdog/action-eslint",
+        "requirements": "= 556a3fdaf8b4201d4d74d406013386aa4f7dab96",
+        "hasDependencies": false,
+        "repository": {
+            "name": "action-eslint",
+            "owner": {
+                "login": "reviewdog"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/linting.yml",
+        "packageName": "reviewdog/action-setup",
+        "requirements": "= d8a7baabd7f3e8544ee4dbde3ee41d0011c3a93f",
+        "hasDependencies": false,
+        "repository": {
+            "name": "action-setup",
+            "owner": {
+                "login": "reviewdog"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/mypy-stubtest.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/mypy-stubtest.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/mypy-stubtest.yml",
+        "packageName": "reviewdog/action-setup",
+        "requirements": "= d8a7baabd7f3e8544ee4dbde3ee41d0011c3a93f",
+        "hasDependencies": false,
+        "repository": {
+            "name": "action-setup",
+            "owner": {
+                "login": "reviewdog"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/nightlies.yml",
+        "packageName": "scientific-python/upload-nightly-action",
+        "requirements": "= 5748273c71e2d8d3a61f3a11a16421c8954f9ecf",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-nightly-action",
+            "owner": {
+                "login": "scientific-python"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/pr_welcome.yml",
+        "packageName": "plbstl/first-contribution",
+        "requirements": "= 4fb1541ce2706255850d56c5684552607be1ae9b",
+        "hasDependencies": false,
+        "repository": {
+            "name": "first-contribution",
+            "owner": {
+                "login": "plbstl"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/stale-tidy.yml",
+        "packageName": "actions/stale",
+        "requirements": "= b5d41d4e1d5dceea10e7104786b73624c18a190f",
+        "hasDependencies": false,
+        "repository": {
+            "name": "stale",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/stale.yml",
+        "packageName": "actions/stale",
+        "requirements": "= b5d41d4e1d5dceea10e7104786b73624c18a190f",
+        "hasDependencies": false,
+        "repository": {
+            "name": "stale",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yml",
+        "packageName": "actions/cache",
+        "requirements": "= 668228422ae6a00e4ad889ee87cd7109ec5666a7",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= bbbca2ddaa5d8feaa63e36b76fdaad77386f024f",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yml",
+        "packageName": "codecov/codecov-action",
+        "requirements": "= 1af58845a975a7985b0beb0cbe6fbbb71a41dbad",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codecov-action",
+            "owner": {
+                "login": "codecov"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/tests.yml",
+        "packageName": "imjohnbo/issue-bot",
+        "requirements": "= 572eed14422c4d6ca37e870f97e7da209422f5bd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "issue-bot",
+            "owner": {
+                "login": "imjohnbo"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/wasm.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/wasm.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/wasm.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= bbbca2ddaa5d8feaa63e36b76fdaad77386f024f",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/wasm.yml",
+        "packageName": "pypa/cibuildwheel",
+        "requirements": "= ee02a1537ce3071a004a6b08c41e72f0fdc42d9a",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cibuildwheel",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "lib/matplotlib/backends/web_backend/package.json",
+        "packageName": "@jsxtools/resize-observer",
+        "requirements": "^ 1.0.4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "frontend",
+            "owner": {
+                "login": "jsxtools"
+            }
+        }
+    },
+    {
+        "manifest": "lib/matplotlib/backends/web_backend/package.json",
+        "packageName": "eslint",
+        "requirements": "^ 6.8.0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "eslint",
+            "owner": {
+                "login": "eslint"
+            }
+        }
+    },
+    {
+        "manifest": "lib/matplotlib/backends/web_backend/package.json",
+        "packageName": "eslint-config-prettier",
+        "requirements": "^ 6.10.1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "eslint-config-prettier",
+            "owner": {
+                "login": "prettier"
+            }
+        }
+    },
+    {
+        "manifest": "lib/matplotlib/backends/web_backend/package.json",
+        "packageName": "prettier",
+        "requirements": "^ 2.0.2",
+        "hasDependencies": false,
+        "repository": {
+            "name": "prettier",
+            "owner": {
+                "login": "prettier"
+            }
+        }
+    }
+]

@@ -1,29 +1,13 @@
 [project]
 name = "Monitoring_Git"
 version = "0.1.0"
-description = "on s'en fou"
+description = "Pipeline Extraction DLT & Dagster"
 readme = "README.md"
-authors = [{ name = "Remi" }]
 requires-python = ">=3.12"
-dependencies = [
-    "python-dotenv",
-    "loguru",
-    "dlt[postgres,s3]>=1.24.0",
-    "python-dotenv>=1.2.2",
-    "requests>=2.33.0",
-    "psycopg2-binary>=2.9.11",
-]
 
-[project.scripts]
-"Monitoring_Git" = "src.main:main"
-
-[tool.uv]
-package = true
-
-[dependency-groups]
-dev = [
-    "pytest",
-    "ruff"
+[tool.uv.workspace]
+members = [
+    "github_deps_tracker",
 ]
 
 [tool.ruff]

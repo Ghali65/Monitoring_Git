@@ -1,0 +1,134 @@
+[
+    {
+        "manifest": "ci/requirements.txt",
+        "packageName": "pip",
+        "requirements": ">= 25",
+        "hasDependencies": false,
+        "repository": {
+            "name": "pip",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "ci/requirements.txt",
+        "packageName": "setuptools",
+        "requirements": ">= 80",
+        "hasDependencies": true,
+        "repository": {
+            "name": "setuptools",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "ci/requirements.txt",
+        "packageName": "tox",
+        "requirements": ">= 4",
+        "hasDependencies": true,
+        "repository": {
+            "name": "tox",
+            "owner": {
+                "login": "tox-dev"
+            }
+        }
+    },
+    {
+        "manifest": "ci/requirements.txt",
+        "packageName": "virtualenv",
+        "requirements": ">= 20.34",
+        "hasDependencies": true,
+        "repository": {
+            "name": "virtualenv",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "docs/requirements.txt",
+        "packageName": "furo",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "furo",
+            "owner": {
+                "login": "pradyunsg"
+            }
+        }
+    },
+    {
+        "manifest": "docs/requirements.txt",
+        "packageName": "sphinx",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinx",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "actions/cache",
+        "requirements": "= 5.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "cache",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 5.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 6.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/test.yml",
+        "packageName": "re-actors/alls-green",
+        "requirements": "= release/v1",
+        "hasDependencies": false,
+        "repository": {
+            "name": "alls-green",
+            "owner": {
+                "login": "re-actors"
+            }
+        }
+    }
+]

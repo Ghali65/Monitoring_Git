@@ -1,0 +1,122 @@
+[
+    {
+        "manifest": ".github/workflows/bump.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/bump.yml",
+        "packageName": "peter-evans/create-pull-request",
+        "requirements": "= c0f553fe549906ede9cf27b5156039d195d2ece0",
+        "hasDependencies": false,
+        "repository": {
+            "name": "create-pull-request",
+            "owner": {
+                "login": "peter-evans"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/ci.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/ci.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lock.yml",
+        "packageName": "dessant/lock-threads",
+        "requirements": "= 7266a7ce5c1df01b1c6db85bf8cd86c737dadbe7",
+        "hasDependencies": false,
+        "repository": {
+            "name": "lock-threads",
+            "owner": {
+                "login": "dessant"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= 3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= bbbca2ddaa5d8feaa63e36b76fdaad77386f024f",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/release.yml",
+        "packageName": "pypa/gh-action-pypi-publish",
+        "requirements": "= ed0c53931b1dc9bd32cbe73a98c7f6766f8a527e",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-pypi-publish",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    }
+]

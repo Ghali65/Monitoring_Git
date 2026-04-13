@@ -1,15 +1,11 @@
 import argparse
 import os
 import sys
-
 import dlt
 
+# Rediriger le path pour importer dependency_fetcher depuis le parent
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from dependency_fetcher import fetch_dependencies_resource
-
-
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-os.environ["DLT_PROJECT_DIR"] = PROJECT_ROOT
-
 
 def main():
     """Point d'entrée principal via DLT Pipeline"""

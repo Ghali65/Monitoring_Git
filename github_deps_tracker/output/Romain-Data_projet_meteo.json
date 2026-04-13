@@ -1,0 +1,213 @@
+[
+    {
+        "manifest": "requirements.txt",
+        "packageName": "altair",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "altair",
+            "owner": {
+                "login": "vega"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "gitpython",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "GitPython",
+            "owner": {
+                "login": "gitpython-developers"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "isort",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "isort",
+            "owner": {
+                "login": "PyCQA"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "matplotlib",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "matplotlib",
+            "owner": {
+                "login": "matplotlib"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "numpy",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": {
+            "name": "numpy",
+            "owner": {
+                "login": "numpy"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "pandas",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pandas",
+            "owner": {
+                "login": "pandas-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "plotly",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "plotly.py",
+            "owner": {
+                "login": "plotly"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "pyarrow",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": null
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "pylint",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pylint",
+            "owner": {
+                "login": "pylint-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "pytest",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "pytest-cov",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-cov",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "pytest-mock",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-mock",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "requests",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "requests",
+            "owner": {
+                "login": "psf"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "seaborn",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "seaborn",
+            "owner": {
+                "login": "mwaskom"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "streamlit",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "streamlit",
+            "owner": {
+                "login": "streamlit"
+            }
+        }
+    },
+    {
+        "manifest": "requirements.txt",
+        "packageName": "watchdog",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "watchdog",
+            "owner": {
+                "login": "gorakhargosh"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/pylint.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= 4.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/pylint.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= 3.*.*",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    }
+]

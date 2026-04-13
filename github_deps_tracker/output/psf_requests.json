@@ -1,0 +1,314 @@
+[
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "certifi",
+        "requirements": ">= 2023.5.7",
+        "hasDependencies": false,
+        "repository": {
+            "name": "python-certifi",
+            "owner": {
+                "login": "certifi"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "charset-normalizer",
+        "requirements": ">= 2,< 4",
+        "hasDependencies": false,
+        "repository": {
+            "name": "charset_normalizer",
+            "owner": {
+                "login": "jawah"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "idna",
+        "requirements": ">= 2.5,< 4",
+        "hasDependencies": true,
+        "repository": {
+            "name": "idna",
+            "owner": {
+                "login": "kjd"
+            }
+        }
+    },
+    {
+        "manifest": "pyproject.toml",
+        "packageName": "urllib3",
+        "requirements": ">= 1.26,< 3",
+        "hasDependencies": true,
+        "repository": {
+            "name": "urllib3",
+            "owner": {
+                "login": "urllib3"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-dev.txt",
+        "packageName": "httpbin",
+        "requirements": "~> 0.10.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "httpbin",
+            "owner": {
+                "login": "postmanlabs"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-dev.txt",
+        "packageName": "pytest",
+        "requirements": ">= 2.8.0,< 9",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-dev.txt",
+        "packageName": "pytest-cov",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-cov",
+            "owner": {
+                "login": "pytest-dev"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-dev.txt",
+        "packageName": "pytest-httpbin",
+        "requirements": "= 2.1.0",
+        "hasDependencies": true,
+        "repository": {
+            "name": "pytest-httpbin",
+            "owner": {
+                "login": "kevin1024"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-dev.txt",
+        "packageName": "trustme",
+        "requirements": "",
+        "hasDependencies": false,
+        "repository": {
+            "name": "trustme",
+            "owner": {
+                "login": "python-trio"
+            }
+        }
+    },
+    {
+        "manifest": "requirements-dev.txt",
+        "packageName": "wheel",
+        "requirements": "",
+        "hasDependencies": true,
+        "repository": {
+            "name": "wheel",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": "docs/requirements.txt",
+        "packageName": "sphinx",
+        "requirements": "= 7.2.6",
+        "hasDependencies": true,
+        "repository": {
+            "name": "sphinx",
+            "owner": {
+                "login": "sphinx-doc"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql-analysis.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql-analysis.yml",
+        "packageName": "github/codeql-action/analyze",
+        "requirements": "= 38697555549f1db7851b81482ff19f1fa5c4fedc",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codeql-action",
+            "owner": {
+                "login": "github"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql-analysis.yml",
+        "packageName": "github/codeql-action/autobuild",
+        "requirements": "= 38697555549f1db7851b81482ff19f1fa5c4fedc",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codeql-action",
+            "owner": {
+                "login": "github"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/codeql-analysis.yml",
+        "packageName": "github/codeql-action/init",
+        "requirements": "= 38697555549f1db7851b81482ff19f1fa5c4fedc",
+        "hasDependencies": false,
+        "repository": {
+            "name": "codeql-action",
+            "owner": {
+                "login": "github"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lint.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lint.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lint.yml",
+        "packageName": "pre-commit/action",
+        "requirements": "= 646c83fcd040023954eafda54b4db0192ce70507",
+        "hasDependencies": false,
+        "repository": {
+            "name": "action",
+            "owner": {
+                "login": "pre-commit"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/lock-issues.yml",
+        "packageName": "dessant/lock-threads",
+        "requirements": "= 7266a7ce5c1df01b1c6db85bf8cd86c737dadbe7",
+        "hasDependencies": false,
+        "repository": {
+            "name": "lock-threads",
+            "owner": {
+                "login": "dessant"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "actions/download-artifact",
+        "requirements": "= 70fc10c6e5e1ce46ad2ea6f2b72d43f7d47b13c3",
+        "hasDependencies": false,
+        "repository": {
+            "name": "download-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "actions/upload-artifact",
+        "requirements": "= bbbca2ddaa5d8feaa63e36b76fdaad77386f024f",
+        "hasDependencies": false,
+        "repository": {
+            "name": "upload-artifact",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/publish.yml",
+        "packageName": "pypa/gh-action-pypi-publish",
+        "requirements": "= ed0c53931b1dc9bd32cbe73a98c7f6766f8a527e",
+        "hasDependencies": false,
+        "repository": {
+            "name": "gh-action-pypi-publish",
+            "owner": {
+                "login": "pypa"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/run-tests.yml",
+        "packageName": "actions/checkout",
+        "requirements": "= de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+        "hasDependencies": false,
+        "repository": {
+            "name": "checkout",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    },
+    {
+        "manifest": ".github/workflows/run-tests.yml",
+        "packageName": "actions/setup-python",
+        "requirements": "= a309ff8b426b58ec0e2a45f0f869d46889d02405",
+        "hasDependencies": false,
+        "repository": {
+            "name": "setup-python",
+            "owner": {
+                "login": "actions"
+            }
+        }
+    }
+]
