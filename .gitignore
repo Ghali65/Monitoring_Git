@@ -11,3 +11,6 @@ venv/
 dist/
 build/
 *.egg-info/
+.venv/
+config.toml
+.dlt/
