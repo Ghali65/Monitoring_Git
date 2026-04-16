@@ -1,6 +1,6 @@
 import os
 from dagster import Config, asset, MaterializeResult, Definitions, AssetExecutionContext
-from dagster_dbt import DbtCliResource, dbt_assets, DagsterDbtProject
+from dagster_dbt import DbtCliResource, dbt_assets, DbtProject
 import dlt
 from pathlib import Path
 
@@ -8,10 +8,12 @@ from pathlib import Path
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 os.environ["DLT_PROJECT_DIR"] = os.path.join(PROJECT_ROOT, "github_deps_tracker")
 
+import sys
+sys.path.append(os.path.dirname(__file__))
 from dependency_fetcher import fetch_dependencies_resource
 
 DBT_PROJECT_DIR = Path(__file__).joinpath("..", "..", "dbt_project").resolve()
-dbt_project = DagsterDbtProject(project_dir=DBT_PROJECT_DIR)
+dbt_project = DbtProject(project_dir=DBT_PROJECT_DIR)
 
 class GithubDepsConfig(Config):
     """
