@@ -1,0 +1,12 @@
+clickhouse_profile:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      host: "{{ env_var('DBT_CH_HOST') }}"
+      port: "{{ env_var('DBT_CH_PORT') | int }}"
+      user: "{{ env_var('DBT_CH_USER') }}"
+      password: "{{ env_var('DBT_CH_PASSWORD') }}"
+      database: "{{ env_var('DBT_CH_DB') }}"
+      secure: "{{ env_var('DBT_CH_SECURE') | as_bool }}"
+      verify: "{{ env_var('DBT_CH_VERIFY') | as_bool }}"
