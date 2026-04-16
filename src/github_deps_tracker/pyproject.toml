@@ -10,4 +10,6 @@ dependencies = [
     "requests>=2.33.0",
     "dagster",
     "dagster-webserver",
+    "dbt-clickhouse",
+    "dagster-dbt",
 ]

@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: silver
+    database: "{{ env_var('DBT_CH_DB', 'default') }}"
+    schema: "default"
+    tables:
+      - name: silver_components
+      - name: silver_dependency_relations
+      - name: silver_github_advisories
+      - name: silver_github_advisories_cwes
+      - name: silver_github_advisories_vulnerabilities

@@ -1,15 +1,19 @@
 import os
-from dagster import Config, asset, MaterializeResult, Definitions
+from dagster import Config, asset, MaterializeResult, Definitions, AssetExecutionContext
+from dagster_dbt import DbtCliResource, dbt_assets, DbtProject
 import dlt
+from pathlib import Path
 
 # On charge PROJECT_ROOT et on le met explicitement pour que dlt trouve .dlt à l'intérieur
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 os.environ["DLT_PROJECT_DIR"] = os.path.join(PROJECT_ROOT, "github_deps_tracker")
 
-# Import du pipeline qui est resté identique
 import sys
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.append(os.path.dirname(__file__))
 from dependency_fetcher import fetch_dependencies_resource
+
+DBT_PROJECT_DIR = Path(__file__).joinpath("..", "..", "dbt_project").resolve()
+dbt_project = DbtProject(project_dir=DBT_PROJECT_DIR)
 
 class GithubDepsConfig(Config):
     """
@@ -55,6 +59,13 @@ def extract_github_dependencies(context, config: GithubDepsConfig):
         }
     )
 
+@dbt_assets(manifest=dbt_project.manifest_path)
+def github_gold_assets(context: AssetExecutionContext, dbt: DbtCliResource):
+    yield from dbt.cli(["build"], context=context).stream()
+
 defs = Definitions(
-    assets=[extract_github_dependencies],
+    assets=[extract_github_dependencies, github_gold_assets],
+    resources={
+        "dbt": DbtCliResource(project_dir=os.fspath(DBT_PROJECT_DIR)),
+    },
 )
