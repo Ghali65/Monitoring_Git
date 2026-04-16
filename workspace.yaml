@@ -1,3 +1,7 @@
 load_from:
   - python_file:
-      relative_path: "github_deps_tracker/orchestration.py"
+      relative_path: "src/github_deps_tracker/orchestration.py"
+      location_name: "github_deps_tracker"
+  - python_file:
+      relative_path: "src/vulnerability/orchestration.py"
+      location_name: "vulnerabilities"
