@@ -1,7 +1,0 @@
-[32m2026-04-13 11:37:29 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ba5fd274-ee3d-400a-b22d-ee758542b058 - 24899 - LOGS_CAPTURED - Started capturing logs in process (pid: 24899).
-[32m2026-04-13 11:37:29 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ba5fd274-ee3d-400a-b22d-ee758542b058 - 24899 - extract_github_dependencies - STEP_START - Started execution of step "extract_github_dependencies".
-[32m2026-04-13 11:37:29 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - ba5fd274-ee3d-400a-b22d-ee758542b058 - extract_github_dependencies - Démarrage de l'extraction DLT pour le repo : Romain-Data/Hackathon-Ynov-Takata
-[32m2026-04-13 11:53:36 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - ba5fd274-ee3d-400a-b22d-ee758542b058 - extract_github_dependencies - Extraction terminée pour Romain-Data/Hackathon-Ynov-Takata.
-[32m2026-04-13 11:53:36 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ba5fd274-ee3d-400a-b22d-ee758542b058 - 24899 - extract_github_dependencies - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
-[32m2026-04-13 11:53:36 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ba5fd274-ee3d-400a-b22d-ee758542b058 - 24899 - extract_github_dependencies - ASSET_MATERIALIZATION - Materialized value extract_github_dependencies.
-[32m2026-04-13 11:53:36 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ba5fd274-ee3d-400a-b22d-ee758542b058 - 24899 - extract_github_dependencies - STEP_SUCCESS - Finished execution of step "extract_github_dependencies" in 16m7s.
