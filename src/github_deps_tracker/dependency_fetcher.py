@@ -1,8 +1,8 @@
 import dlt
 import uuid
 from datetime import datetime, timezone
-from config import load_config
-from github_client import GitHubGraphQLClient
+from github_deps_tracker.config import load_config
+from github_deps_tracker.github_client import GitHubGraphQLClient
 
 def get_ecosystem_from_manifest(manifest: str) -> str:
     """Déduit l'écosystème du registre à partir du nom du fichier manifest de Github."""
