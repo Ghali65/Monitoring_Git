@@ -5,6 +5,14 @@ description = "Pipeline Extraction DLT & Dagster"
 readme = "README.md"
 requires-python = ">=3.12"
 
+dependencies = [
+    "python-dotenv",
+    "loguru",
+    "dlt[s3]>=1.24.0",
+    "boto3>=1.42.70",
+    "enlighten>=1.14.1",
+]
+
 [tool.uv.workspace]
 members = [
     "github_deps_tracker",
