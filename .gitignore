@@ -16,3 +16,6 @@ logs*
 .dlt/secrets.toml
 Exemples/
 Coolify_Deployment.md
+.venv/
+config.toml
+.dlt/
