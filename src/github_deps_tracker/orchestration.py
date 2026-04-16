@@ -10,7 +10,7 @@ os.environ["DLT_PROJECT_DIR"] = os.path.join(PROJECT_ROOT, "github_deps_tracker"
 
 from dependency_fetcher import fetch_dependencies_resource
 
-DBT_PROJECT_DIR = Path(__file__).joinpath("..", "dbt_project").resolve()
+DBT_PROJECT_DIR = Path(__file__).joinpath("..", "..", "dbt_project").resolve()
 dbt_project = DagsterDbtProject(project_dir=DBT_PROJECT_DIR)
 
 class GithubDepsConfig(Config):

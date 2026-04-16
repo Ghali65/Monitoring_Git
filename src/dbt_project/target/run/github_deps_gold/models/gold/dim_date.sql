@@ -10,7 +10,7 @@
         
   
 
-  insert into `default`.`dim_date`
+  insert into `default`.`dim_date__dbt_backup`
         ("date_id", "full_date", "year", "month", "day", "quarter", "day_name", "month_name", "is_weekend")
 
 WITH date_series AS (

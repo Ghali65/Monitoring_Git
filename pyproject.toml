@@ -15,7 +15,7 @@ dependencies = [
 
 [tool.uv.workspace]
 members = [
-    "github_deps_tracker",
+    "src/github_deps_tracker",
 ]
 
 [tool.ruff]
