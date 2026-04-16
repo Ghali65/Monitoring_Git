@@ -14,3 +14,4 @@ build/
 .venv/
 config.toml
 .dlt/
+test_minio.py
