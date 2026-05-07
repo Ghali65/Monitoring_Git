@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: silver
-    database: "{{ env_var('DBT_CH_DB', 'default') }}"
-    schema: "default"
+    database: "{{ env_var('DBT_CH_DB_SILVER', 'default') }}"
+    schema: "{{ env_var('DBT_CH_DB_SILVER', 'default') }}"
     tables:
       - name: silver_components
       - name: silver_dependency_relations

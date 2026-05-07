@@ -2,8 +2,13 @@ import os
 import sys
 from pathlib import Path
 import dlt
+from dotenv import load_dotenv
 
-# On force l'ajout du dossier src au PYTHONPATH pour trouver les sous-modules
+# Chemin vers le fichier .env à la racine du projet
+ENV_PATH = Path(__file__).parent.parent / ".env"
+load_dotenv(ENV_PATH)
+
+# On force l'ajout du dossier src au PYTHONPATH
 sys.path.append(os.path.dirname(__file__))
 
 from dagster import (
@@ -93,10 +98,8 @@ def extract_github_dependencies(context, config: GithubDepsConfig):
 
     context.log.info(f"Extraction terminée pour {config.owner}/{config.repo}.")
     
-    # On retourne un MaterializeResult pour signifier que les deux assets sont à jour
-    return MaterializeResult(
-        metadata={"dlt_metrics": str(load_info)}
-    )
+    yield MaterializeResult(asset_key="github_components", metadata={"dlt_metrics": str(load_info)})
+    yield MaterializeResult(asset_key="github_dependency_relations", metadata={"dlt_metrics": str(load_info)})
 
 
 @multi_asset(
@@ -124,9 +127,9 @@ def extract_github_vulnerabilities(context):
 
     context.log.info("Extraction terminée pour les vulnérabilités.")
 
-    return MaterializeResult(
-        metadata={"dlt_metrics": str(load_info)}
-    )
+    yield MaterializeResult(asset_key="github_advisories", metadata={"dlt_metrics": str(load_info)})
+    yield MaterializeResult(asset_key="github_advisories_cwes", metadata={"dlt_metrics": str(load_info)})
+    yield MaterializeResult(asset_key="github_advisories_vulnerabilities", metadata={"dlt_metrics": str(load_info)})
 
 
 @dbt_assets(
@@ -152,6 +155,12 @@ dbt_build_job = define_asset_job(
     selection=AssetSelection.assets(github_gold_assets),
 )
 
+# Job pour l'extraction des dépendances (déclenché par le backend)
+github_dependencies_job = define_asset_job(
+    name="github_dependencies_job",
+    selection=AssetSelection.groups("github_extraction").downstream(),
+)
+
 # Planification toutes les 2 heures
 vulnerability_schedule = ScheduleDefinition(
     job=vulnerability_sync_job,
@@ -166,7 +175,7 @@ defs = Definitions(
         extract_github_vulnerabilities,
         github_gold_assets,
     ],
-    jobs=[vulnerability_sync_job, dbt_build_job],
+    jobs=[vulnerability_sync_job, dbt_build_job, github_dependencies_job],
     schedules=[vulnerability_schedule],
     resources={
         "dbt": DbtCliResource(project_dir=os.fspath(DBT_PROJECT_DIR)),

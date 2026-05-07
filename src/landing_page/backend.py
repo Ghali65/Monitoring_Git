@@ -116,8 +116,11 @@ def trigger_analysis(request: TriggerAnalysisRequest):
     typename = result_data.get("__typename")
 
     if typename != "LaunchRunSuccess":
-        error_msg = result_data.get("message", "Erreur inconnue Dagster")
-        raise HTTPException(status_code=500, detail=f"Dagster a refusé le run : {error_msg}")
+        error_msg = result_data.get("message", "Pas de message d'erreur précis")
+        raise HTTPException(
+            status_code=500, 
+            detail=f"Dagster a refusé le run (Type: {typename}) : {error_msg}"
+        )
 
     run_id = result_data["run"]["runId"]
 
