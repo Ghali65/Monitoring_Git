@@ -1,1 +1,69 @@
-{"_invocation_id": "2bf40e89-3a2a-4d2a-9b76-ccbda67739be", "linked": {"0": {"name": "source.github_deps_gold.silver.silver_components", "type": "source", "succ": [5, 6, 8]}, "1": {"name": "source.github_deps_gold.silver.silver_dependency_relations", "type": "source", "succ": [5, 6]}, "2": {"name": "source.github_deps_gold.silver.silver_github_advisories", "type": "source", "succ": [5, 7]}, "3": {"name": "source.github_deps_gold.silver.silver_github_advisories_cwes", "type": "source", "succ": [7]}, "4": {"name": "source.github_deps_gold.silver.silver_github_advisories_vulnerabilities", "type": "source", "succ": [5]}, "5": {"name": "model.github_deps_gold.fact_vulnerability_scan", "type": "model"}, "6": {"name": "model.github_deps_gold.dim_dependency", "type": "model"}, "7": {"name": "model.github_deps_gold.dim_advisory", "type": "model"}, "8": {"name": "model.github_deps_gold.dim_repository", "type": "model"}, "9": {"name": "model.github_deps_gold.dim_date", "type": "model"}}}
+{
+    "_invocation_id": "629281a6-0555-4039-82fe-5617036e46a4",
+    "linked": {
+        "0": {
+            "name": "source.github_deps_gold.silver.silver_components",
+            "type": "source",
+            "succ": [
+                7,
+                8
+            ]
+        },
+        "1": {
+            "name": "source.github_deps_gold.silver.silver_dependency_relations",
+            "type": "source",
+            "succ": [
+                7,
+                8,
+                9
+            ]
+        },
+        "2": {
+            "name": "source.github_deps_gold.silver.silver_github_advisories",
+            "type": "source",
+            "succ": [
+                6
+            ]
+        },
+        "3": {
+            "name": "source.github_deps_gold.silver.silver_github_advisories_cwes",
+            "type": "source",
+            "succ": [
+                6
+            ]
+        },
+        "4": {
+            "name": "source.github_deps_gold.silver.silver_github_advisories_vulnerabilities",
+            "type": "source",
+            "succ": [
+                9
+            ]
+        },
+        "5": {
+            "name": "model.github_deps_gold.dim_date",
+            "type": "model"
+        },
+        "6": {
+            "name": "model.github_deps_gold.dim_advisory",
+            "type": "model",
+            "succ": [
+                9
+            ]
+        },
+        "7": {
+            "name": "model.github_deps_gold.dim_repository",
+            "type": "model"
+        },
+        "8": {
+            "name": "model.github_deps_gold.dim_dependency",
+            "type": "model",
+            "succ": [
+                9
+            ]
+        },
+        "9": {
+            "name": "model.github_deps_gold.fact_vulnerability_scan",
+            "type": "model"
+        }
+    }
+}

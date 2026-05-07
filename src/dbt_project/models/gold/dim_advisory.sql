@@ -6,7 +6,8 @@ WITH base_advisory AS (
         ghsa_id,
         cve_id,
         severity,
-        summary
+        summary,
+        cvss__score
     FROM {{ source('silver', 'silver_github_advisories') }}
 ),
 cwes AS (
@@ -18,8 +19,7 @@ cwes AS (
 )
 
 SELECT
-    a._dlt_id as advisory_id,
-    a.ghsa_id,
+    a.ghsa_id as advisory_id,
     a.cve_id,
     CAST(
         CASE 
@@ -30,6 +30,8 @@ SELECT
         'Enum8(\'low\' = 1, \'moderate\' = 2, \'high\' = 3, \'critical\' = 4)'
     ) as severity_label,
     a.summary,
-    c.cwe_list
+    a.cvss__score,
+    c.cwe_list,
+    a._dlt_id as internal_id
 FROM base_advisory a
 LEFT JOIN cwes c ON a._dlt_id = c._dlt_parent_id
