@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: silver
-    database: "{{ env_var('DBT_CH_DB', 'default') }}"
+    database: "{{ env_var('DBT_CH_DB_SILVER', 'default') }}"
     schema: "default"
     tables:
       - name: silver_components

@@ -93,9 +93,10 @@ def extract_github_dependencies(context, config: GithubDepsConfig):
 
     context.log.info(f"Extraction terminée pour {config.owner}/{config.repo}.")
     
-    # On retourne un MaterializeResult pour signifier que les deux assets sont à jour
-    return MaterializeResult(
-        metadata={"dlt_metrics": str(load_info)}
+    # Retourner un tuple de MaterializeResult pour chaque spec du multi_asset
+    return (
+        MaterializeResult(asset_key="github_components", metadata={"dlt_metrics": str(load_info)}),
+        MaterializeResult(asset_key="github_dependency_relations", metadata={"dlt_metrics": str(load_info)})
     )
 
 
@@ -124,8 +125,11 @@ def extract_github_vulnerabilities(context):
 
     context.log.info("Extraction terminée pour les vulnérabilités.")
 
-    return MaterializeResult(
-        metadata={"dlt_metrics": str(load_info)}
+    # Retourner un tuple de MaterializeResult pour chaque spec du multi_asset
+    return (
+        MaterializeResult(asset_key="github_advisories", metadata={"dlt_metrics": str(load_info)}),
+        MaterializeResult(asset_key="github_advisories_cwes", metadata={"dlt_metrics": str(load_info)}),
+        MaterializeResult(asset_key="github_advisories_vulnerabilities", metadata={"dlt_metrics": str(load_info)})
     )
 
 
@@ -144,6 +148,12 @@ def github_gold_assets(context: AssetExecutionContext, dbt: DbtCliResource):
 vulnerability_sync_job = define_asset_job(
     name="vulnerability_sync_job",
     selection=AssetSelection.groups("vulnerability_extraction").downstream(),
+)
+
+# Job pour lancer l’extraction de dépendances GitHub via DLT
+github_dependencies_job = define_asset_job(
+    name="github_dependencies_job",
+    selection=AssetSelection.assets(extract_github_dependencies),
 )
 
 # Job global pour DBT seul
@@ -166,7 +176,7 @@ defs = Definitions(
         extract_github_vulnerabilities,
         github_gold_assets,
     ],
-    jobs=[vulnerability_sync_job, dbt_build_job],
+    jobs=[vulnerability_sync_job, github_dependencies_job, dbt_build_job],
     schedules=[vulnerability_schedule],
     resources={
         "dbt": DbtCliResource(project_dir=os.fspath(DBT_PROJECT_DIR)),
