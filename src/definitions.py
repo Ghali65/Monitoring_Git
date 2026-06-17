@@ -169,6 +169,13 @@ vulnerability_schedule = ScheduleDefinition(
     cron_schedule="0 */2 * * *",
 )
 
+# Planification pour les assets Gold (DBT) - 40 min après l'extraction par exemple
+gold_schedule = ScheduleDefinition(
+    name="gold_schedule",
+    job=dbt_build_job,
+    cron_schedule="40 */2 * * *",
+)
+
 
 # --- DEFINITIONS ---
 defs = Definitions(
@@ -178,7 +185,7 @@ defs = Definitions(
         github_gold_assets,
     ],
     jobs=[vulnerability_sync_job, dbt_build_job, github_dependencies_job],
-    schedules=[vulnerability_schedule],
+    schedules=[vulnerability_schedule, gold_schedule],
     resources={
         "dbt": DbtCliResource(project_dir=os.fspath(DBT_PROJECT_DIR)),
     },
