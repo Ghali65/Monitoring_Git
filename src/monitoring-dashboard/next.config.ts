@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  allowedDevOrigins: ['frontend.46.224.33.190.sslip.io', 'localhost'],
 };
 
 export default nextConfig;
