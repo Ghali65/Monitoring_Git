@@ -11,6 +11,8 @@ services:
       - .env
     environment:
       - DAGSTER_HOME=/opt/dagster/dagster_home
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   frontend:
     build:
@@ -26,3 +28,5 @@ services:
       - DBT_CH_USER
       - DBT_CH_PASSWORD
       - DBT_CH_DB_SILVER
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
