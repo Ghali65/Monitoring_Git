@@ -46,7 +46,7 @@ class CustomDagsterDbtTranslator(DagsterDbtTranslator):
     def get_asset_key(self, dbt_resource_props):
         resource_type = dbt_resource_props.get("resource_type")
         name = dbt_resource_props.get("name")
-        
+
         if resource_type == "source":
             # Mapping précis pour les vulnérabilités
             mapping_vulnerability = {
@@ -87,7 +87,7 @@ class GithubDepsConfig(Config):
 )
 def extract_github_dependencies(context, config: GithubDepsConfig):
     context.log.info(f"Démarrage de l'extraction DLT pour le repo : {config.owner}/{config.repo}")
-    
+
     pipeline = dlt.pipeline(
         pipeline_name="github_deps_tracker",
         destination="filesystem",
@@ -99,7 +99,7 @@ def extract_github_dependencies(context, config: GithubDepsConfig):
     )
 
     context.log.info(f"Extraction terminée pour {config.owner}/{config.repo}.")
-    
+
     yield MaterializeResult(asset_key="github_components", metadata={"dlt_metrics": str(load_info)})
     yield MaterializeResult(asset_key="github_dependency_relations", metadata={"dlt_metrics": str(load_info)})
 
