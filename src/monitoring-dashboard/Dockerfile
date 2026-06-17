@@ -2,6 +2,9 @@ FROM node:20-slim
 
 WORKDIR /app
 
+# Désactivation de la télémétrie Next.js
+ENV NEXT_TELEMETRY_DISABLED=1
+
 # Copier les fichiers de dépendances
 COPY package.json package-lock.json* ./
 

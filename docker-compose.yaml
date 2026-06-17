@@ -20,3 +20,9 @@ services:
       - "3001:3001"
     env_file:
       - .env
+    environment:
+      - DBT_CH_HOST
+      - DBT_CH_PORT
+      - DBT_CH_USER
+      - DBT_CH_PASSWORD
+      - DBT_CH_DB_SILVER
