@@ -7,8 +7,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    volumes:
-      - .:/app
     environment:
       - DAGSTER_HOME=/opt/dagster/dagster_home
 
@@ -18,7 +16,3 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3001:3001"
-    volumes:
-      - ./src/monitoring-dashboard:/app
-      # Permet d'éviter que le dossier node_modules local n'écrase celui du conteneur
-      - /app/node_modules
