@@ -20,3 +20,4 @@ models:
   github_deps_gold:
     gold:
       +materialized: table
+      +schema: gold

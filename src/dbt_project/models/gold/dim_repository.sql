@@ -1,6 +1,6 @@
 {{ config(materialized='table') }}
 
--- Repos are identified as parents in dependency_relations (they have dependents but are not dependencies themselves)
+-- A true repo is a root node: it appears as parent_id but never as child_id
 SELECT DISTINCT
     toUUID(rel.parent_id) as repo_id,
     c.name as repo_name,
@@ -8,3 +8,8 @@ SELECT DISTINCT
 FROM {{ source('silver', 'silver_dependency_relations') }} rel
 JOIN {{ source('silver', 'silver_components') }} c ON toString(c.id) = rel.parent_id
 WHERE c.github_url IS NOT NULL
+  AND rel.parent_id NOT IN (
+      SELECT DISTINCT child_id
+      FROM {{ source('silver', 'silver_dependency_relations') }}
+      WHERE child_id IS NOT NULL
+  )
