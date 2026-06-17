@@ -26,6 +26,8 @@ services:
       - DBT_CH_USER
       - DBT_CH_PASSWORD
       - DBT_CH_DB_SILVER
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
 networks:
   default:
