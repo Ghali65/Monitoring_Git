@@ -400,6 +400,7 @@ export default function Dashboard() {
   const [repos, setRepos]         = useState<Repo[]>([]);
   const [selected, setSelected]   = useState('');
   const [loading, setLoading]     = useState(true);
+  const [errorMsg, setErrorMsg]   = useState<string | null>(null);
   const [copied, setCopied]       = useState<number | null>(null);
   const [invSearch, setInvSearch] = useState('');
   const [showVulnOnly, setShowVulnOnly] = useState(false);
@@ -415,6 +416,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     setLoading(true);
+    setErrorMsg(null);
     setInvSearch('');
     setShowVulnOnly(false);
     setAiAnalysis(null);
@@ -422,13 +424,18 @@ export default function Dashboard() {
     fetch(url)
       .then(r => r.json())
       .then(d => {
-        if (d && !d.error) {
+        if (d && d.error) {
+          setErrorMsg(d.error);
+        } else if (d) {
           setData(d);
           if (d.isFocused) triggerAiAnalysis(d, selected);
         }
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch(e => {
+        setErrorMsg(e.message || "Erreur réseau ou API injoignable");
+        setLoading(false);
+      });
   }, [selected]);
 
   function triggerAiAnalysis(d: DashboardData, repoId: string) {
@@ -527,8 +534,22 @@ export default function Dashboard() {
             style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}
           >
 
+            {/* ── ERROR MESSAGE ─────────────────────────────────────── */}
+            {errorMsg && (
+              <div style={{ padding: '2rem', background: 'var(--critical-dim)', border: '1px solid var(--critical)', borderRadius: '12px', color: 'var(--critical)', marginBottom: '1rem' }}>
+                <h3 style={{ margin: '0 0 0.5rem 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <AlertTriangle size={20} />
+                  Erreur de connexion à la base de données ClickHouse
+                </h3>
+                <p style={{ margin: 0, fontFamily: 'monospace' }}>{errorMsg}</p>
+                <p style={{ margin: '1rem 0 0 0', fontSize: '0.9rem', opacity: 0.8 }}>
+                  Le conteneur Next.js n'arrive pas à joindre ClickHouse. Vérifiez que la variable DBT_CH_HOST correspond au nom du conteneur ClickHouse sur Coolify.
+                </p>
+              </div>
+            )}
+
             {/* ── KPI ROW ─────────────────────────────────────── */}
-            <div className="kpi-row">
+            <div className="kpi-row" style={{ opacity: errorMsg ? 0.3 : 1, pointerEvents: errorMsg ? 'none' : 'auto' }}>
 
               {/* Health Score — wide card */}
               <div className="kpi-card kpi-health">

@@ -30,3 +30,8 @@ services:
       - DBT_CH_DB_SILVER
     extra_hosts:
       - "host.docker.internal:host-gateway"
+
+networks:
+  default:
+    name: coolify
+    external: true
