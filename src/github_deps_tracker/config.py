@@ -1,5 +1,8 @@
+"""Chargement de la configuration depuis les variables d'environnement."""
+
 import os
-from dotenv import load_dotenv, find_dotenv
+
+from dotenv import find_dotenv, load_dotenv
 
 
 def load_config() -> dict:

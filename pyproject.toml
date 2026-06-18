@@ -11,17 +11,13 @@ dependencies = [
     "dlt[s3]>=1.24.0",
     "boto3>=1.42.70",
     "enlighten>=1.14.1",
+    "requests>=2.33.0",
     "dagster",
     "dagster-webserver",
     "dagster-dbt",
     "dbt-clickhouse",
     "fastapi>=0.111.0",
     "uvicorn[standard]>=0.23.0",
-]
-
-[tool.uv.workspace]
-members = [
-    "src/github_deps_tracker",
 ]
 
 [tool.ruff]
