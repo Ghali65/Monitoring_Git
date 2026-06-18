@@ -11,6 +11,8 @@ services:
       - .env
     environment:
       - DAGSTER_HOME=/opt/dagster/dagster_home
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   frontend:
     build:
