@@ -486,9 +486,9 @@ export default function Dashboard() {
 
       {/* ── HEADER ──────────────────────────────────────────── */}
       <header className="header">
-        <Link href="/" className="header-brand" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <Link href="/" className="header-brand" style={{ textDecoration: 'none', color: 'var(--fg)', display: 'flex', alignItems: 'center', gap: '8px' }}>
           <Image src="/logo.png" alt="Logo" width={32} height={32} style={{ objectFit: 'contain' }} />
-          <div className="brand-name" style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0, padding: 0 }}>
+          <div className="brand-name" style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0, padding: 0, color: 'var(--fg)' }}>
             Git<span style={{ color: 'var(--primary)' }}>Monitoring</span>
           </div>
         </Link>
@@ -536,13 +536,13 @@ export default function Dashboard() {
 
             {/* ── ERROR MESSAGE ─────────────────────────────────────── */}
             {errorMsg && (
-              <div style={{ padding: '2rem', background: 'var(--critical-dim)', border: '1px solid var(--critical)', borderRadius: '12px', color: 'var(--critical)', marginBottom: '1rem' }}>
+              <div style={{ padding: '2rem', background: 'var(--critical-dim)', border: '1px solid rgba(220,38,38,0.3)', borderRadius: '12px', color: 'var(--critical)', marginBottom: '1rem' }}>
                 <h3 style={{ margin: '0 0 0.5rem 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <AlertTriangle size={20} />
                   Erreur de connexion à la base de données ClickHouse
                 </h3>
-                <p style={{ margin: 0, fontFamily: 'monospace' }}>{errorMsg}</p>
-                <p style={{ margin: '1rem 0 0 0', fontSize: '0.9rem', opacity: 0.8 }}>
+                <p style={{ margin: 0, fontFamily: 'monospace', fontSize: '0.85rem' }}>{errorMsg}</p>
+                <p style={{ margin: '1rem 0 0 0', fontSize: '0.85rem', color: 'var(--fg-muted)' }}>
                   Le conteneur Next.js n'arrive pas à joindre ClickHouse. Vérifiez que la variable DBT_CH_HOST correspond au nom du conteneur ClickHouse sur Coolify.
                 </p>
               </div>
@@ -558,7 +558,7 @@ export default function Dashboard() {
               </div>
 
               {/* Advisories */}
-              <div className="kpi-card">
+              <div className="kpi-card kpi-vuln">
                 <div className="kpi-icon" style={{ background: 'var(--critical-dim)' }}>
                   <AlertTriangle size={13} style={{ color: 'var(--critical)' }} />
                 </div>
@@ -572,7 +572,7 @@ export default function Dashboard() {
               </div>
 
               {/* Direct */}
-              <div className="kpi-card">
+              <div className="kpi-card kpi-direct">
                 <div className="kpi-icon" style={{ background: 'var(--high-dim)' }}>
                   <Zap size={13} style={{ color: 'var(--high)' }} />
                 </div>
@@ -586,7 +586,7 @@ export default function Dashboard() {
               </div>
 
               {/* Indirect */}
-              <div className="kpi-card">
+              <div className="kpi-card kpi-transitive">
                 <div className="kpi-icon" style={{ background: 'var(--surface-3)' }}>
                   <Package size={13} style={{ color: 'var(--fg-muted)' }} />
                 </div>
@@ -597,7 +597,7 @@ export default function Dashboard() {
               </div>
 
               {/* GHSA DB */}
-              <div className="kpi-card">
+              <div className="kpi-card kpi-ghsa">
                 <div className="kpi-icon" style={{ background: 'var(--accent-dim)' }}>
                   <Database size={13} style={{ color: 'var(--accent)' }} />
                 </div>

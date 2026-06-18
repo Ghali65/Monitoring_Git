@@ -168,14 +168,14 @@ github_dependencies_job = define_asset_job(
 
 vulnerability_schedule = ScheduleDefinition(
     job=vulnerability_sync_job,
-    cron_schedule="0 */2 * * *",
+    cron_schedule="0 */1 * * *",
 )
 
 # 40 min d'écart pour laisser le temps au S3Queue d'ingérer les fichiers DLT
 gold_schedule = ScheduleDefinition(
     name="gold_schedule",
     job=dbt_build_job,
-    cron_schedule="40 */2 * * *",
+    cron_schedule="15 */1 * * *",
 )
 
 defs = Definitions(

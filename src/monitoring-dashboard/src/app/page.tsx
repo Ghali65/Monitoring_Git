@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { DependencyGraph } from "./components/DependencyGraph";
 
 const parseGithubRepoUrl = (url: string) => {
   const trimmed = url.trim();
@@ -87,8 +88,10 @@ export default function LandingPage() {
 
   return (
     <div className="hero-wrapper">
+      <DependencyGraph light />
+
       <div className="top-logo">
-        <Image src="/logo.png" alt="Logo" width={40} height={40} style={{ objectFit: 'contain' }} />
+        <Image src="/logo.png" alt="Logo" width={36} height={36} style={{ objectFit: 'contain' }} />
         <div className="brand-name">
           Git<span>Monitoring</span>
         </div>
@@ -100,19 +103,20 @@ export default function LandingPage() {
           textDecoration: 'none',
           color: 'var(--text-main)',
           fontWeight: 600,
-          padding: '10px 20px',
-          background: 'rgba(255,255,255,0.1)',
+          fontSize: '0.88rem',
+          padding: '9px 18px',
+          background: 'rgba(249,115,22,0.06)',
           borderRadius: '12px',
-          border: '1px solid var(--glass-border)',
-          transition: 'all 0.3s ease'
+          border: '1px solid rgba(249,115,22,0.2)',
+          transition: 'all 0.25s ease'
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.background = 'rgba(255,255,255,0.15)';
-          e.currentTarget.style.borderColor = 'var(--primary)';
+          e.currentTarget.style.background = 'rgba(249,115,22,0.1)';
+          e.currentTarget.style.borderColor = 'rgba(249,115,22,0.4)';
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.background = 'rgba(255,255,255,0.1)';
-          e.currentTarget.style.borderColor = 'var(--glass-border)';
+          e.currentTarget.style.background = 'rgba(249,115,22,0.06)';
+          e.currentTarget.style.borderColor = 'rgba(249,115,22,0.2)';
         }}
         >
           Accéder au Dashboard
@@ -121,12 +125,17 @@ export default function LandingPage() {
 
       <main className="main-container">
         <section className="hero-content">
+          <div className="hero-eyebrow">
+            <div className="eyebrow-dot" />
+            <span>Scanner de vulnérabilités</span>
+          </div>
+
           <h1>
-            Analysez vos Dépôts <br />
-            <span className="accent-text">en Temps Réel</span>
+            Vos dépendances, <br />
+            <span className="accent-text">sous le scanner.</span>
           </h1>
           <p className="hero-description">
-            Visualisez vos dépendances, détectez les vulnérabilités et optimisez votre graphe de composants.
+            Branchez un dépôt GitHub public et obtenez l'état exact de vos vulnérabilités, packages exposés, CVE actives, niveaux de sévérité, correctifs disponibles.
           </p>
 
           <div className="card">
@@ -134,6 +143,7 @@ export default function LandingPage() {
               <div className="input-wrapper">
                 <input
                   id="repoUrl"
+                  className="url-input"
                   type="text"
                   value={repoUrl}
                   onChange={(event) => setRepoUrl(event.target.value)}
