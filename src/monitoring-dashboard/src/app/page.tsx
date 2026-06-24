@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { DependencyGraph } from "./components/DependencyGraph";
+import { AdminPopup } from "./components/AdminPopup";
 
 const parseGithubRepoUrl = (url: string) => {
   const trimmed = url.trim();
@@ -98,7 +99,8 @@ export default function LandingPage() {
       </div>
 
       {/* Menu Top Right */}
-      <div style={{ position: 'absolute', top: '32px', right: '5%', zIndex: 20 }}>
+      <div style={{ position: 'absolute', top: '32px', right: '5%', zIndex: 20, display: 'flex', alignItems: 'center' }}>
+        <AdminPopup />
         <Link href="/dashboard" style={{
           textDecoration: 'none',
           color: 'var(--text-main)',

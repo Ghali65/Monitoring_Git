@@ -9,6 +9,7 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
+import { AdminPopup } from '../components/AdminPopup';
 
 /* ── Types ───────────────────────────────────────────────────────── */
 
@@ -494,6 +495,30 @@ export default function Dashboard() {
         </Link>
 
         <div className="header-controls">
+          <Link 
+            href="/" 
+            style={{
+              textDecoration: 'none',
+              color: 'var(--fg, #000)',
+              fontWeight: 600,
+              fontSize: '0.88rem',
+              padding: '9px 18px',
+              background: 'transparent',
+              borderRadius: '12px',
+              border: '1px solid var(--border, #ccc)',
+              transition: 'all 0.25s ease',
+              marginRight: '12px'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'rgba(0,0,0,0.05)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'transparent';
+            }}
+          >
+            Accueil
+          </Link>
+          <AdminPopup />
           <div className="repo-select-wrap">
             <GitBranch />
             <select
