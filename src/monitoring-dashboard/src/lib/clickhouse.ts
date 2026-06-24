@@ -1,4 +1,8 @@
 import { createClient } from '@clickhouse/client';
+import dotenv from 'dotenv';
+import path from 'path';
+
+dotenv.config({ path: path.resolve(process.cwd(), '../../.env') });
 
 export const clickhouse = createClient({
   url: `http://${process.env.DBT_CH_HOST}:${process.env.DBT_CH_PORT || '8123'}`,
