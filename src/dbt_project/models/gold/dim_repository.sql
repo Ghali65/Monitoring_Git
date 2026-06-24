@@ -4,7 +4,8 @@
 SELECT DISTINCT
     toUUID(rel.parent_id) as repo_id,
     c.name as repo_name,
-    c.github_url
+    c.github_url,
+    if(c.is_initial IS NULL, false, c.is_initial) as is_initial
 FROM {{ source('silver', 'silver_dependency_relations') }} rel
 JOIN {{ source('silver', 'silver_components') }} c ON toString(c.id) = rel.parent_id
 WHERE c.github_url IS NOT NULL

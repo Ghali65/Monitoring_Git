@@ -112,6 +112,7 @@ def fetch_dependencies_resource(target_owner: str, target_repo: str, max_depth: 
                 "ecosystem": "github",
                 "github_url": f"https://github.com/{current_owner}/{current_repo}",
                 "last_update": datetime.now(UTC).isoformat(),
+                "is_initial": current_depth == 1,
             },
             "components",
         )
@@ -143,6 +144,7 @@ def fetch_dependencies_resource(target_owner: str, target_repo: str, max_depth: 
                     "ecosystem": eco,
                     "github_url": github_url,
                     "last_update": datetime.now(UTC).isoformat(),
+                    "is_initial": False,
                 },
                 "components",
             )
