@@ -61,8 +61,8 @@ export async function GET(request: Request) {
         f.dependency_key,
         dep.name,
         dep.version,
-        \${ECO} AS ecosystem,
-        \${repoId ? 'r.depth' : '0'} AS depth,
+        ${ECO} AS ecosystem,
+        ${repoId ? 'r.depth' : '0'} AS depth,
         f.advisory_id,
         a.cve_id,
         a.severity_label AS severity,
@@ -71,21 +71,21 @@ export async function GET(request: Request) {
         a.summary,
         vuln.first_patched_version AS recommended_fix,
         f.detected_at
-      FROM \${G}.fact_vulnerability_scan f
-      JOIN \${G}.dim_dependency dep ON f.dependency_key = dep.unique_id
-      JOIN \${G}.dim_advisory a ON f.advisory_id = a.advisory_id
-      LEFT JOIN \${S}.silver_github_advisories_vulnerabilities vuln
+      FROM ${G}.fact_vulnerability_scan f
+      JOIN ${G}.dim_dependency dep ON f.dependency_key = dep.unique_id
+      JOIN ${G}.dim_advisory a ON f.advisory_id = a.advisory_id
+      LEFT JOIN ${S}.silver_github_advisories_vulnerabilities vuln
         ON a.internal_id = vuln._dlt_parent_id
        AND dep.name = vuln.package__name
-      \${repoId
-        ? \`JOIN (
+      ${repoId
+        ? `JOIN (
             SELECT child_id, min(depth) AS depth
-            FROM \${S}.silver_dependency_relations
-            WHERE parent_id = '\${repoId}'
+            FROM ${S}.silver_dependency_relations
+            WHERE parent_id = '${repoId}'
             GROUP BY child_id
-          ) r ON r.child_id = toString(dep.dependency_id)\`
+          ) r ON r.child_id = toString(dep.dependency_id)`
         : ''}
-      \${repoId ? \`WHERE f.repo_id = toUUID('\${repoId}')\` : ''}
+      ${repoId ? `WHERE f.repo_id = toUUID('${repoId}')` : ''}
     `;
 
     const rawCursor = await clickhouse.query({ query: rawQuery, format: 'JSONEachRow' });
@@ -96,7 +96,7 @@ export async function GET(request: Request) {
     for (const row of rawData) {
       if (!isVulnerable(row.version, row.recommended_fix)) continue;
       
-      const key = `\${row.repo_id}|\${row.dependency_key}|\${row.advisory_id}`;
+      const key = `${row.repo_id}|${row.dependency_key}|${row.advisory_id}`;
       const existing = latestMap.get(key);
       if (!existing || new Date(row.detected_at) > new Date(existing.detected_at)) {
         latestMap.set(key, row);
@@ -104,11 +104,11 @@ export async function GET(request: Request) {
     }
     const filteredVulns = Array.from(latestMap.values());
 
-    const totalAdvisoriesCursor = await clickhouse.query({ query: `SELECT count() as c FROM \${G}.dim_advisory`, format: 'JSONEachRow' });
+    const totalAdvisoriesCursor = await clickhouse.query({ query: `SELECT count() as c FROM ${G}.dim_advisory`, format: 'JSONEachRow' });
     const totalAdvisoriesData = await totalAdvisoriesCursor.json() as any[];
     const total_advisories = Number(totalAdvisoriesData[0]?.c || 0);
 
-    const uniqueAdvisories = new Set(filteredVulns.map(v => `\${v.dependency_key}|\${v.advisory_id}`));
+    const uniqueAdvisories = new Set(filteredVulns.map(v => `${v.dependency_key}|${v.advisory_id}`));
     const uniqueDeps = new Set(filteredVulns.map(v => v.dependency_key));
     let direct_vulns = 0;
     let indirect_vulns = 0;
@@ -133,7 +133,7 @@ export async function GET(request: Request) {
     for (const v of filteredVulns) {
       const sev = v.severity || 'unknown';
       if (!distMap[sev]) distMap[sev] = new Set();
-      distMap[sev].add(`\${v.dependency_key}|\${v.advisory_id}`);
+      distMap[sev].add(`${v.dependency_key}|${v.advisory_id}`);
     }
     const distributionData = Object.entries(distMap).map(([severity_label, set]) => ({
       severity_label,
@@ -143,7 +143,7 @@ export async function GET(request: Request) {
     // Triage
     const triageMap = new Map<string, any>();
     for (const v of filteredVulns) {
-      const key = `\${v.name}|\${v.ecosystem}`;
+      const key = `${v.name}|${v.ecosystem}`;
       const existing = triageMap.get(key);
       if (!existing) {
         triageMap.set(key, {
@@ -196,11 +196,11 @@ export async function GET(request: Request) {
           SELECT
             dep.unique_id   AS dependency_key,
             dep.name,
-            \${ECO}          AS ecosystem,
+            ${ECO}          AS ecosystem,
             min(r.depth)    AS depth
-          FROM \${S}.silver_dependency_relations r
-          JOIN \${G}.dim_dependency dep ON r.child_id = toString(dep.dependency_id)
-          WHERE r.parent_id = '\${repoId}'
+          FROM ${S}.silver_dependency_relations r
+          JOIN ${G}.dim_dependency dep ON r.child_id = toString(dep.dependency_id)
+          WHERE r.parent_id = '${repoId}'
           GROUP BY dep.unique_id, dep.name, ecosystem
           ORDER BY min(r.depth) ASC, dep.name ASC
         `,
