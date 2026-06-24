@@ -32,10 +32,14 @@ interface RawVuln {
 }
 
 function isVulnerable(installed: string | null, patched: string | null): boolean {
-  if (!installed || !patched) return true;
+  // Si on ne connaît pas la version installée, on suppose qu'elle n'est pas vulnérable pour éviter les faux positifs
+  if (!installed) return false;
+  if (!patched) return true;
   const iMatch = installed.match(/([0-9]+\.[0-9]+\.[0-9]+|[0-9]+\.[0-9]+|[0-9]+)/);
   const pMatch = patched.match(/([0-9]+\.[0-9]+\.[0-9]+|[0-9]+\.[0-9]+|[0-9]+)/);
-  if (!iMatch || !pMatch) return true;
+  
+  // Si on ne peut pas parser l'une des deux versions, on reste prudent
+  if (!iMatch || !pMatch) return false;
   
   const iParts = iMatch[1].split('.').map(n => parseInt(n, 10) || 0);
   const pParts = pMatch[1].split('.').map(n => parseInt(n, 10) || 0);
