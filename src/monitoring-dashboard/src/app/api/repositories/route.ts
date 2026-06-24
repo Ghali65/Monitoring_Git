@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 import { clickhouse } from '@/lib/clickhouse';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function GET() {
   try {
     const cursor = await clickhouse.query({
@@ -9,6 +12,7 @@ export async function GET() {
           toString(repo_id) as repo_id,
           repo_name as name
         FROM gold.dim_repository
+        WHERE is_initial = true
         ORDER BY name ASC
       `,
       format: 'JSONEachRow',
