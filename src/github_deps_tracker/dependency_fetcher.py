@@ -6,6 +6,7 @@ Parcourt l'arbre de dépendances GitHub (BFS) et alimente les tables
 """
 
 import uuid
+from dagster import get_dagster_logger
 from datetime import UTC, datetime
 
 import dlt
@@ -78,7 +79,7 @@ def fetch_dependencies_resource(target_owner: str, target_repo: str, max_depth: 
     visited = set()
     queue = [(target_owner, target_repo, 1)]
 
-    print(
+    get_dagster_logger().info(
         f"Lancement du générateur DLT structuré pour {target_owner}/{target_repo}"
         f" (Profondeur fixée: {max_depth})..."
     )
@@ -91,12 +92,12 @@ def fetch_dependencies_resource(target_owner: str, target_repo: str, max_depth: 
             continue
 
         visited.add(identifier)
-        print(f"[{current_depth}/{max_depth}] Extraction DLT : {identifier}...")
+        get_dagster_logger().info(f"[{current_depth}/{max_depth}] Extraction DLT : {identifier}...")
 
         try:
             raw_data = client.fetch_dependencies(current_owner, current_repo)
         except Exception as e:
-            print(f"   -> Ignoré, erreur API : {e}")
+            get_dagster_logger().info(f"   -> Ignoré, erreur API : {e}")
             continue
 
         dependencies = extract_dependencies(raw_data)

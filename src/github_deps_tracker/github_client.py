@@ -5,6 +5,7 @@ import time
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from dagster import get_dagster_logger
 
 DEPENDENCY_GRAPH_QUERY = """
 query ($owner: String!, $name: String!) {
@@ -77,7 +78,7 @@ class GitHubGraphQLClient:
                 if "errors" in data:
                     err_str = str(data["errors"]).lower()
                     if "timedout" in err_str and attempt < max_attempts - 1:
-                        print(
+                        get_dagster_logger().info(
                             f"      [GraphQL Timeout Interne] Nouvel essai"
                             f" ({attempt + 1}/{max_attempts})..."
                         )
@@ -90,7 +91,7 @@ class GitHubGraphQLClient:
 
             except requests.exceptions.Timeout as e:
                 if attempt < max_attempts - 1:
-                    print(f"      [Timeout Réseau] Nouvel essai ({attempt + 1}/{max_attempts})...")
+                    get_dagster_logger().info(f"      [Timeout Réseau] Nouvel essai ({attempt + 1}/{max_attempts})...")
                     time.sleep(3)
                     continue
                 raise ValueError(f"Timeout réseau définitif : {e}") from e
