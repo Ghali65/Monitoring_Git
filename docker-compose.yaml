@@ -28,6 +28,7 @@ services:
       - DBT_CH_USER
       - DBT_CH_PASSWORD
       - DBT_CH_DB_SILVER
+      - DAGSTER_URL=http://dagster:3000
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
