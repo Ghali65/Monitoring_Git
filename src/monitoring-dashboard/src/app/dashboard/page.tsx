@@ -458,7 +458,23 @@ export default function Dashboard() {
   }
 
   function handleCopy(i: number, name: string, fix: string) {
-    navigator.clipboard.writeText(`npm install ${name}@${fix}`);
+    const textToCopy = `npm install ${name}@${fix}`;
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(textToCopy).catch(console.error);
+    } else {
+      const textArea = document.createElement("textarea");
+      textArea.value = textToCopy;
+      textArea.style.position = "absolute";
+      textArea.style.left = "-999999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        document.execCommand('copy');
+      } catch (err) {
+        console.error('Failed to copy text', err);
+      }
+      textArea.remove();
+    }
     setCopied(i);
     setTimeout(() => setCopied(null), 2000);
   }
