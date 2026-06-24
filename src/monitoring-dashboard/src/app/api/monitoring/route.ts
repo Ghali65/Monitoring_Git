@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 import { clickhouse } from '@/lib/clickhouse';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 // CRITICAL −40 · HIGH −15 · MODERATE −5 · LOW −2 · ×1.5 if direct dependency
