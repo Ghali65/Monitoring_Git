@@ -211,7 +211,23 @@ export async function GET(request: Request) {
         format: 'JSONEachRow',
       });
       const invRaw = await inv.json() as any[];
-      inventoryData = invRaw.map(r => ({
+      
+      // Déduplication par nom (pour fusionner UNKNOWN et PYPI si la même dépendance vient de deux manifests différents)
+      const dedupMap = new Map<string, any>();
+      for (const r of invRaw) {
+        if (!dedupMap.has(r.name)) {
+          dedupMap.set(r.name, { ...r });
+        } else {
+          // Si on a déjà ce nom, on privilégie un écosystème connu plutôt que UNKNOWN
+          const existing = dedupMap.get(r.name);
+          if (existing.ecosystem === 'UNKNOWN' && r.ecosystem !== 'UNKNOWN') {
+            existing.ecosystem = r.ecosystem;
+            existing.dependency_key = r.dependency_key; // Met à jour la clé pour correspondre au bon écosystème
+          }
+        }
+      }
+      
+      inventoryData = Array.from(dedupMap.values()).map(r => ({
         ...r,
         is_vulnerable: uniqueDeps.has(r.dependency_key) ? 1 : 0
       }));

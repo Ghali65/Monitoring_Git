@@ -20,9 +20,9 @@ def get_ecosystem_from_manifest(manifest: str) -> str:
     if not manifest:
         return "unknown"
     manifest = manifest.lower()
-    if any(ext in manifest for ext in ["requirements.txt", "pyproject", "setup.py", "pipfile"]):
+    if any(ext in manifest for ext in ["requirements.txt", "pyproject", "setup.py", "pipfile", "poetry.lock"]):
         return "pypi"
-    if any(ext in manifest for ext in ["package.json", "yarn.lock"]):
+    if any(ext in manifest for ext in ["package.json", "yarn.lock", "package-lock.json"]):
         return "npm"
     if "pom.xml" in manifest:
         return "maven"
