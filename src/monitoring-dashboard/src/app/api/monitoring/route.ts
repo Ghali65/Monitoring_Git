@@ -197,16 +197,39 @@ export async function GET(request: Request) {
     if (repoId) {
       const inv = await clickhouse.query({
         query: `
+          WITH 
+            direct_deps AS (
+              SELECT r.child_id, min(r.depth) as depth
+              FROM ${S}.silver_dependency_relations r
+              WHERE r.parent_id = '${repoId}'
+              GROUP BY r.child_id
+            ),
+            dep_repos AS (
+              SELECT DISTINCT toString(c_repo.id) AS dep_repo_id
+              FROM direct_deps
+              JOIN ${S}.silver_components c_pkg ON direct_deps.child_id = toString(c_pkg.id)
+              JOIN ${S}.silver_components c_repo ON c_pkg.github_url = c_repo.github_url AND c_repo.purl LIKE 'pkg:github/%'
+              WHERE c_pkg.github_url IS NOT NULL
+            ),
+            level2_deps AS (
+              SELECT r.child_id, 2 AS depth
+              FROM ${S}.silver_dependency_relations r
+              JOIN dep_repos ON r.parent_id = dep_repos.dep_repo_id
+            ),
+            all_deps AS (
+              SELECT child_id, depth FROM direct_deps
+              UNION ALL
+              SELECT child_id, depth FROM level2_deps
+            )
           SELECT
             dep.unique_id   AS dependency_key,
             dep.name,
             ${ECO}          AS ecosystem,
-            min(r.depth)    AS depth
-          FROM ${S}.silver_dependency_relations r
-          JOIN ${G}.dim_dependency dep ON r.child_id = toString(dep.dependency_id)
-          WHERE r.parent_id = '${repoId}'
+            min(d.depth)    AS depth
+          FROM all_deps d
+          JOIN ${G}.dim_dependency dep ON d.child_id = toString(dep.dependency_id)
           GROUP BY dep.unique_id, dep.name, ecosystem
-          ORDER BY min(r.depth) ASC, dep.name ASC
+          ORDER BY min(d.depth) ASC, dep.name ASC
         `,
         format: 'JSONEachRow',
       });
