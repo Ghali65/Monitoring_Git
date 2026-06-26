@@ -10,10 +10,10 @@ from dagster import get_dagster_logger
 DEPENDENCY_GRAPH_QUERY = """
 query ($owner: String!, $name: String!) {
   repository(owner: $owner, name: $name) {
-    dependencyGraphManifests(first: 100) {
+    dependencyGraphManifests(first: 15) {
       nodes {
         filename
-        dependencies(first: 100) {
+        dependencies(first: 30) {
           nodes {
             packageName
             requirements
@@ -48,10 +48,10 @@ class GitHubGraphQLClient:
         self.session = requests.Session()
 
         retry_strategy = Retry(
-            total=3,
+            total=5,
             status_forcelist=[429, 500, 502, 503, 504],
             allowed_methods=["POST"],
-            backoff_factor=1,
+            backoff_factor=3,
         )
         adapter = HTTPAdapter(max_retries=retry_strategy)
         self.session.mount("https://", adapter)
@@ -61,7 +61,7 @@ class GitHubGraphQLClient:
         variables = {"owner": owner, "name": repo}
         payload = {"query": DEPENDENCY_GRAPH_QUERY, "variables": variables}
 
-        max_attempts = 3
+        max_attempts = 5
 
         for attempt in range(max_attempts):
             try:
