@@ -18,3 +18,5 @@ Exemples/
 .venv/
 config.toml
 .dlt/
+Export_PBI/
+PBI_MOnitoring_Git.pbix
